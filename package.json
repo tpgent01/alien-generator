@@ -28,7 +28,7 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "random-js": "^2.1.0",
-    "sequelize": "^6.6.1"
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {
     "jest": "^26.6.3"
