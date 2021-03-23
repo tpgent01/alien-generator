@@ -19,6 +19,10 @@ const sess = {
   })
 };
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 app.use(session(sess));
 
 app.use(express.json());
@@ -29,5 +33,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(require('./controllers/'));
 
 sequelize.sync({ force: true }).then(() => {
-    app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
+  app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
