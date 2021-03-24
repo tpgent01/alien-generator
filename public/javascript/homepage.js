@@ -32,6 +32,7 @@ const menu = () => {
     })
 }
 
+
 function init() {
     menu();
     navigationIndicator();
