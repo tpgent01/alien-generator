@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
       attributes: [
         'id',
         'alien_url',
-        'title',
+        'name',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
@@ -45,7 +45,7 @@ router.get('/:id', (req, res) => {
       attributes: [
         'id',
         'alien_url',
-        'title',
+        'name',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
@@ -80,7 +80,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     if (req.session) {
       Alien.create({
-        title: req.body.title,
+        name: req.body.name,
         alien_url: req.body.alien_url,
         user_id: req.session.user_id
       })
@@ -95,7 +95,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Alien.update(
       {
-        title: req.body.title
+        name: req.body.name
       },
       {
         where: {
