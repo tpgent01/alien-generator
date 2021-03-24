@@ -29,10 +29,10 @@ router.get('/', (req, res) => {
     ]
   })
     .then(dbAlienData => {
-      const posts = dbAlienData.map(alien => alien.get({ plain: true }));
+      const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
 
       res.render('homepage', {
-        posts,
+        aliens,
         loggedIn: req.session.loggedIn
       });
     })
@@ -76,7 +76,7 @@ router.get('/alien/:id', (req, res) => {
           return;
         }
   
-        const post = dbAlienData.get({ plain: true });
+        const alien = dbAlienData.get({ plain: true });
   
         res.render('single-alien', {
           alien,
