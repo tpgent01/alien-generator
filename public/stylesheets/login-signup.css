@@ -118,12 +118,10 @@ button{
     transition: transform .3s ease-in-out;
     cursor: pointer;
     margin: 2rem auto;
-}
-button a{
     color: var(--white);
     font-weight: 700;
-    text-decoration: none;
 }
+
 button:hover{
     transform: scale(1.1);
 }

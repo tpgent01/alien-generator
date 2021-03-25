@@ -21,10 +21,10 @@ const form = () => {
 const loginFormhandler = async (e) => {
     e.preventDefault()
 
-    const username = document.getElementById('username-login').Value.trim();
-    const password = document.getElementById('password-login').Value.trim();
+    const email = document.querySelector('#email-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
 
-    if (username && password) {
+    if (email && password) {
         const response = await fetch('/api/users/login', {
             method: 'post',
             body: JSON.stringify({ email, password }),
@@ -42,9 +42,9 @@ const loginFormhandler = async (e) => {
 
 const signupFormhandler = async (e) => {
     e.preventDefault()
-    const email = document.getElementById('email-signup').value.trim();
-    const username = document.getElementById('username-signup').value.trim();
-    const password = document.getElementById('password-signup').value.trim();
+    const email = document.querySelector('#email-signup').value.trim();
+    const username = document.querySelector('#username-signup').value.trim();
+    const password = document.querySelector('#password-signup').value.trim();
 
     if (email && username && password) {
         const response = await fetch('/api/users', {
@@ -59,6 +59,10 @@ const signupFormhandler = async (e) => {
             alert(response.statusText);
         }
     }
+
+    email.value = '';
+    username.value = '';
+    password.value = '';
 }
 
 
