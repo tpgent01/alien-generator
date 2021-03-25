@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
     .then(dbAlienData => {
       const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
 
-      res.render('homepage', {
+      res.render('pages/home', {
         aliens,
         loggedIn: req.session.loggedIn
       });
