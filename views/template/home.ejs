@@ -1,10 +1,15 @@
-<p>
-    <% aliens.forEach(alien=>{ %>
-
-        <span>
-            <%= alien.lifeform%>
-                <%= alien.created_at%>
-                    <%= alien.user.username%>
-        </span><br>
-        <% }) %>
-</p>
+<div class="card-figure">
+    <div class="top-panel">
+        <h1>Charlie</h1>
+        <p class="info"><span>backstory:</span> A sad tale about a happy alien</p>
+        <p class="info"><span>locamotion:</span> Average sized Flapper (Avian Locamotion)</p>
+    </div>
+    <div class="bottom-panel">
+        <span>abilities</span>
+        <div class="abilities">
+            <div class="ability">venom</div>
+            <div class="ability">Elasticity II</div>
+            <div class="ability">Accelerated Evolution</div>
+        </div>
+    </div>
+</div>
