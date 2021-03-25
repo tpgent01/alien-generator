@@ -1,3 +1,10 @@
-<main class="nav-content">
+<p>
+    <% aliens.forEach(alien=>{ %>
 
-</main>
+        <span>
+            <%= alien.lifeform%>
+                <%= alien.created_at%>
+                    <%= alien.user.username%>
+        </span><br>
+        <% }) %>
+</p>

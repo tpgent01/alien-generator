@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Alien, Comment, User, Vote } = require('../models');
 
+
 // get all aliens for homepage
 router.get('/', (req, res) => {
   console.log('======================');
@@ -29,7 +30,6 @@ router.get('/', (req, res) => {
   })
     .then(dbAlienData => {
       const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
-
       res.render('pages/main', {
         aliens,
         loggedIn: req.session.loggedIn
