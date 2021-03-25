@@ -30,7 +30,11 @@ router.get('/', (req, res) => {
     .then(dbAlienData => {
       const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
 
+<<<<<<< HEAD
       res.render('pages/homepage', {
+=======
+      res.render('pages/home', {
+>>>>>>> 56ef0a01226594aec542789e4ce3d2f40bffa80c
         aliens,
         loggedIn: req.session.loggedIn
       });
@@ -95,7 +99,12 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+<<<<<<< HEAD
 
 module.exports = router;
 
 
+=======
+  
+module.exports = router;
+>>>>>>> 56ef0a01226594aec542789e4ce3d2f40bffa80c
