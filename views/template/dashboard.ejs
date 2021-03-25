@@ -1,32 +1,30 @@
+<%- include('./head') %>
 
-<body>
-    <!-- sidebar here ? -->
-   
-    <!-- Dashboard Content -->
-    <div class="main">
-    <!-- Sidenav -->
-    <%- include('../template/nav') %>
+    <body>
+        <!-- sidebar here ? -->
 
-    <!-- page content -->
-    <div class="container">
-        <div class="row align-items-start">
-            <div class="col">
-                <!-- fist card here?-->
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Alien</h5>
-                        <p class="card-text">
-                            <!-- alien info --> 
-                            <strong>Name</strong>: <%= user.local.username %><br>
-                            <strong>Lifeform</strong>: <%= alien.local.lifeform %><br>
-                        </p>
+        <!-- Dashboard Content -->
+        <div class="main">
+            <!-- Sidenav -->
+            <%- include('./nav') %>
+
+                <!-- page content -->
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <!-- fist card here?-->
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p>
+                                        <!-- alien info -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                <%- include('./footer') %>
         </div>
-    </div>
-    </div>
-    <script src="../../javascript/dashboard.js"></script>
-</body>
-
-
+    </body>

@@ -1,0 +1,10 @@
+<p>
+    <% aliens.forEach(alien=>{ %>
+
+        <span>
+            <%= alien.lifeform%>
+                <%= alien.created_at%>
+                    <%= alien.user.username%>
+        </span><br>
+        <% }) %>
+</p>
