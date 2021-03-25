@@ -21,8 +21,8 @@ const form = () => {
 const loginFormhandler = async (e) => {
     e.preventDefault()
 
-    const username = document.getElementById('username-login');
-    const password = document.getElementById('password-login');
+    const username = document.getElementById('username-login').Value.trim();
+    const password = document.getElementById('password-login').Value.trim();
 
     if (username && password) {
         const response = await fetch('/api/users/login', {
@@ -37,19 +37,19 @@ const loginFormhandler = async (e) => {
             alert(response.statusText);
         }
     }
+
 }
 
 const signupFormhandler = async (e) => {
     e.preventDefault()
-    const name = document.getElementById('name-signup');
-    const email = document.getElementById('email-signup');
-    const username = document.getElementById('username-login');
-    const password = document.getElementById('password-login');
+    const email = document.getElementById('email-signup').value;
+    const username = document.getElementById('username-signup').value;
+    const password = document.getElementById('password-signup').value;
 
-    if (name && email && username && password) {
-        const response = await fetch('/api/users/login', {
+    if (email && username && password) {
+        const response = await fetch('/api/users', {
             method: 'post',
-            body: JSON.stringify({ name, email, email, password }),
+            body: JSON.stringify({ email, username, password }),
             headers: { 'Content-Type': 'application/json' }
         });
 
@@ -63,8 +63,9 @@ const signupFormhandler = async (e) => {
 
 
 function init() {
-    loginFormhandler();
-    signupFormhandler();
+    document.querySelector('#login').addEventListener('submit', loginFormhandler);
+    document.querySelector('#signup').addEventListener('submit', signupFormhandler);
+
     form();
 }
 
