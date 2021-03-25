@@ -54,6 +54,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--white);
+    transition: background-color .3s ease;
 }
 .form-card .option .option-btn{
     width: 100%;
@@ -64,6 +66,7 @@ body{
     color: #000;
     font-weight: 700;
     text-decoration: none;
+
 }
 .form-card .option .option-btn.current{
     background-color: var(--purple);
