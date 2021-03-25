@@ -9,8 +9,12 @@
                         <% } %>
 
 
-        </div>
 
-        <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
-        <script src="../../javascript/homepage.js"></script>
+        </div>
+        <% if(loggedIn) {%>
+            <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
+            <script src="../../javascript/homepage.js"></script>
+            <script src="../../javascript/logout.js"></script>
+            <% } %>
+
     </body>

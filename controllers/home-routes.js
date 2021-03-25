@@ -30,7 +30,7 @@ router.get('/', (req, res) => {
     .then(dbAlienData => {
       const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
 
-      res.render('homepage', {
+      res.render('pages/homepage', {
         aliens,
         loggedIn: req.session.loggedIn
       });
@@ -43,59 +43,59 @@ router.get('/', (req, res) => {
 
 // get single alien
 router.get('/alien/:id', (req, res) => {
-    Alien.findOne({
-      where: {
-        id: req.params.id
-      },
-      attributes: [
-        'id',
-        'lifeform',
-        'created_at',
-        [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
-      ],
-      include: [
-        {
-          model: Comment,
-          attributes: ['id', 'comment_text', 'user_id', 'alien_id', 'created_at'],
-          include: {
-            model: User,
-            attributes: ['username']
-          }
-        },
-        {
+  Alien.findOne({
+    where: {
+      id: req.params.id
+    },
+    attributes: [
+      'id',
+      'lifeform',
+      'created_at',
+      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
+    ],
+    include: [
+      {
+        model: Comment,
+        attributes: ['id', 'comment_text', 'user_id', 'alien_id', 'created_at'],
+        include: {
           model: User,
           attributes: ['username']
         }
-      ]
-    })
-      .then(dbAlienData => {
-        if (!dbAlienData) {
-          res.status(404).json({ message: 'No alien found with this id' });
-          return;
-        }
-  
-        const alien = dbAlienData.get({ plain: true });
-  
-        res.render('single-alien', {
-          alien,
-          loggedIn: req.session.loggedIn
-        });
-      })
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
+      },
+      {
+        model: User,
+        attributes: ['username']
+      }
+    ]
+  })
+    .then(dbAlienData => {
+      if (!dbAlienData) {
+        res.status(404).json({ message: 'No alien found with this id' });
+        return;
+      }
+
+      const alien = dbAlienData.get({ plain: true });
+
+      res.render('single-alien', {
+        alien,
+        loggedIn: req.session.loggedIn
       });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.get('/login', (req, res) => {
-    if (req.session.loggedIn) {
-      res.redirect('/');
-      return;
-    }
-  
-    res.render('login');
+  if (req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('login');
 });
-  
+
 module.exports = router;
-  
+
 
