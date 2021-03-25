@@ -42,9 +42,9 @@ const loginFormhandler = async (e) => {
 
 const signupFormhandler = async (e) => {
     e.preventDefault()
-    const email = document.getElementById('email-signup').value;
-    const username = document.getElementById('username-signup').value;
-    const password = document.getElementById('password-signup').value;
+    const email = document.getElementById('email-signup').value.trim();
+    const username = document.getElementById('username-signup').value.trim();
+    const password = document.getElementById('password-signup').value.trim();
 
     if (email && username && password) {
         const response = await fetch('/api/users', {
