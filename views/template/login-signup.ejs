@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/login-signup.css">
+    <title>Login Form</title>
+</head>
+
 <body>
 
 
@@ -12,11 +23,11 @@
 
                 <form action="#" class="form-group" id="login">
                     <h1>Welcome Back!</h1>
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username-login" placeholder="Username" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email-login" placeholder="Email" required><br>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password-login" placeholder="Password" required><br>
-                    <button><a href="#">Log In</a></button>
+                    <input type="password" id="password-login" placeholder="Password" required><br>
+                    <button type="submit">Log In</button>
                 </form>
 
 
@@ -24,20 +35,18 @@
                 <form action="#" class="form-group" id="signup">
                     <h1>Hello There!</h1>
                     <p>Don't have an account? Sign up. Your alien awaits</p>
-                    <label for="name">FullName</label>
-                    <input type="text" name="name" id="name-signup" placeholder="FullName" required><br>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email-signup" placeholder="email" required><br>
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username-signup" placeholder="Username" required><br>
+                    <input type="text" id="username-signup" placeholder="Username" required><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email-signup" placeholder="email" required><br>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password-signup" placeholder="Password" required><br>
-                    <button><a href="#">Sign Up</a></button>
+                    <input type="password" id="password-signup" placeholder="Password" required><br>
+                    <button type="submit">Sign Up</button>
                 </form>
 
             </div>
         </div>
     </div>
 
-    <script src="../../javascript/login.js"></script>
+    <script src="/javascript/login.js"></script>
 </body>

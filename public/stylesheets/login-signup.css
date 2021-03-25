@@ -31,7 +31,7 @@ body{
 }
 .form-card{
     width: 450px;
-    height: 600px;
+    height: 500px;
     background-color: #fff;
     padding: 1rem;
     border-radius: 20px;
@@ -118,12 +118,10 @@ button{
     transition: transform .3s ease-in-out;
     cursor: pointer;
     margin: 2rem auto;
-}
-button a{
     color: var(--white);
     font-weight: 700;
-    text-decoration: none;
 }
+
 button:hover{
     transform: scale(1.1);
 }
