@@ -8,8 +8,7 @@ router.get('/', (req, res) => {
     Alien.findAll({
       attributes: [
         'id',
-        'alien_url',
-        'name',
+        'lifeform',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
@@ -44,8 +43,7 @@ router.get('/:id', (req, res) => {
       },
       attributes: [
         'id',
-        'alien_url',
-        'name',
+        'lifeform',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
@@ -80,8 +78,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
     if (req.session) {
       Alien.create({
-        name: req.body.name,
-        alien_url: req.body.alien_url,
+        lifeform: req.body.lifeform,
         user_id: req.session.user_id
       })
         .then(dbAlienData => res.json(dbAlienData))
@@ -95,7 +92,7 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Alien.update(
       {
-        name: req.body.name
+        lifeform: req.body.lifeform
       },
       {
         where: {

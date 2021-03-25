@@ -13,8 +13,7 @@ router.get('/', withAuth, (req, res) => {
       },
       attributes: [
         'id',
-        'alien_url',
-        'name',
+        'lifeform',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
@@ -47,8 +46,7 @@ router.get('/', withAuth, (req, res) => {
     Alien.findByPk(req.params.id, {
       attributes: [
         'id',
-        'alien_url',
-        'name',
+        'lifeform',
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
