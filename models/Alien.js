@@ -14,8 +14,7 @@ class Alien extends Model {
         },
         attributes: [
           'id',
-          'alien_url',
-          'title',
+          'lifeform',
           'created_at',
           [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
         ],
@@ -43,19 +42,9 @@ Alien.init(
       primaryKey: true,
       autoIncrement: true
     },
-    title: {
-      type: DataTypes.STRING,
+    lifeform: {
+      type: DataTypes.JSON,
       allowNull: false,
-      validate: {
-        len: [1]
-      }
-    },
-    alien_url: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isURL: true
-      }
     },
     user_id: {
       type: DataTypes.INTEGER,
