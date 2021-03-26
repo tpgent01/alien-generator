@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
-      order: [['vote_count', 'DESC']],
+      order: [['created_at', 'DESC']],
       include: [
         {
           model: Comment,
@@ -93,12 +93,14 @@ router.post('/', withAuth, (req, res) => {
 
 router.put('/upvote', withAuth, (req, res) => {
   // custom static method created in models/Post.js
+  if (req.session) {
   Alien.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
     .then(updatedVoteData => res.json(updatedVoteData))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
+  }
 });
 
 router.put('/:id', withAuth, (req, res) => {
