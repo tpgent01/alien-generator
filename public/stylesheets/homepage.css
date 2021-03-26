@@ -94,30 +94,37 @@ main{
     align-items: center;
     justify-content: center;
 }  
-.grid {
-    display: grid;
-    block-size: 250px;
-    gap: 10px;
-    grid-template-columns: 50px;
-    grid-template-rows: masonry;
-    background-color: var(--grey);
-  }
-  .grid-items-1 {
-      background-color: var(--dark-blue);
-      color: var(--white);
-  }
 
-  .grid-items-2 {
-      background-color: var(--grey);
-  }
 
-  .grid-items-3 {
-    background-color: var(--dark-blue);
-    color: var(--white);
-}
+.wrapper {
+    margin: 5em auto;
+    max-width: 1000px;
+  
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
+  }
 
   
+
+
     
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--grey);
+}
+
 
 
 footer{

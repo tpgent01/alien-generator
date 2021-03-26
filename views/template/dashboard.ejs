@@ -1,51 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/homepage.css">
-    <title>Alien Lifeform Generator</title>
-</head>
-<!-- <%- include('./head') %>  -->
+<%- include('./head') %>
 
   <body>
 
     <!-- Dashboard Content -->
-    <div class="dashboard"> 
+    <div class="dashboard">
       <!-- Sidenav -->
       <%- include('./nav') %>
 
         <!-- page content -->
-        <div class="container">
 
-            <!-- placeholder -->
-          
-         <!-- <div class="grid"></div>  -->
+        <div class="wrapper">
 
-         <header class="bg-white shadow">
-            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-              <h1 class="text-3xl font-bold text-gray-900">
-                Dashboard
-              </h1>
-            </div>
-          </header>
-          <main>
-            <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-              <!-- Replace with your content -->
-              <div class="px-4 py-6 sm:px-0">
-                <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+          <div class="header">
+            <h1 class="header__title">Expanding Card Grid</h1>
+            <h2 class="header__subtitle">with Flexbox</h2>
+          </div>
+        
+          <div class="cards">
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
               </div>
-              <!-- /End replace -->
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
             </div>
-          </main>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+            <div class=" card [ is-collapsed ] ">
+              <div class="card__inner [ js-expander ]">
+                <span>Card</span>
+                <i class="fa fa-folder-o"></i>
+              </div>
+              <div class="card__expander">
+                <i class="fa fa-close [ js-collapser ]"></i>
+                Expander
+              </div>
+            </div>
+        
+          </div>
+        
+        </div>
 
-        </div> 
+        <!-- <div class="container">
+
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <button type="button" class="btn btn-primary">Generate Alien</button>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+            <div class="column">
+              <div class="card">..</div>
+            </div>
+          </div>
+
+
+
+
+
+        </div> -->
 
         <%- include('./footer') %>
     </div>
-    
     <script src="/javascript/homepage.js"></script>
     <script src="/javascript/logout.js"></script>
   </body>
