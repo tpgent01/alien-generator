@@ -8,146 +8,88 @@
       <%- include('./nav') %>
 
         <!-- page content -->
-
-        <div class="wrapper">
-
-          <div class="header">
-            <h1 class="header__title">Expanding Card Grid</h1>
-            <h2 class="header__subtitle">with Flexbox</h2>
-          </div>
-        
-          <div class="cards">
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-            <div class=" card [ is-collapsed ] ">
-              <div class="card__inner [ js-expander ]">
-                <span>Card</span>
-                <i class="fa fa-folder-o"></i>
-              </div>
-              <div class="card__expander">
-                <i class="fa fa-close [ js-collapser ]"></i>
-                Expander
-              </div>
-            </div>
-        
-          </div>
-        
-        </div>
-
-        <!-- <div class="container">
+        <!-- page content -->
+        <div class="container">
 
           <div class="row">
-            <div class="column">
+            <div class="dash_column">
               <div class="card">
-                <button type="button" class="btn btn-primary">Generate Alien</button>
+                <form>
+                  <div>
+                    <button id = 'randomName'>Randomize Name</button>
+                    <input type="text" id="lifeformName" name="lifeformName" value="Dufrugia" cols="100" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Backstory</button>
+                    <textarea id="backstory" name="backstory" rows="6" cols="80" readonly>Dufrugia is cocky and self-reliant. It was the only survivor of 173 offspring, the rest were consumed by its parents. Dufrugia is seeking some kind of purpose or answer to existance. Wow, won't it be dissapointed.
+                    </textarea>
+                  </div>
+                  <div>
+                    <button>Randomize Locomotion</button>
+                    <input type="text" id="locomotion" name="locomotion" value="a Muscular Flapper (Avian Locomotion)" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Upper Appendage</button>
+                    <input type="text" id="appendage" name="appendage" value="two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Neck</button>
+                    <input type="text" id="neck" name="neck" value="features" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Head</button>
+                    <input type="text" id="head" name="head" value="'s Humanoid Head with its Enlarged Cranium features" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Facial Features</button>
+                    <input type="text" id="facialFeatures" name="facialFeatures" value="Short Spikes" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Mouth</button>
+                    <input type="text" id="mouth" name="mouth" value="Multiple Rows of Teeth" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Eye</button>
+                    <input type="text" id="eye" name="eye" value="Bulbous" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Nose</button>
+                    <input type="text" id="nose" name="nose" value="Rhinarium" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Ears</button>
+                    <input type="text" id="ears" name="ears" value="Small Humanoid" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Skin</button>
+                    <input type="text" id="skin" name="skin" value="a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Other Features</button>
+                    <input type="text" id="otherFeatures" name="otherFeatures" value="a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae" readonly>
+                  </div>
+                  <div>
+                    <button>Randomize Abilities</button>
+                    <input type="text" id="abilites" name="abilities" value="Flight, Size Control" readonly>
+                  </div>
+                  <input type="submit" value="Generate Alien">
+                </form>
               </div>
             </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
-            <div class="column">
-              <div class="card">..</div>
-            </div>
+            <div class="dash_column">
+              <div class="card">Name:<br>Dufrugia<br><br>
+                Backstory:<br>Dufrugia is cocky and self-reliant. It was the only survivor of 173 offspring, the rest were consumed by its parents. Dufrugia is seeking some kind of purpose or answer to existance. Wow, won't it be dissapointed.<br><br>
+                Physical Description:<br>Dufrugia is a Muscular Flapper (Avian Locomotion) that imposes its will on surrounding objects and entities using its two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger. Dufrugia's Humanoid Head with its Enlarged Cranium features Short Spikes. This does nothing to distract one from its Bulbous eyes, Rhinarium, Small Humanoid ears, and Multiple Rows of Teeth! Dufrugia's epidermis is a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes, but most notably Dufrugia has a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae.<br><br>
+                Abilities: <br>
+                Flight - Many creatures have vestigial wings or the ability to hover. This gives your character the ability to fly, baby! <br>
+                Size Control - There are easier way to do this than going on a diet.
+              </div>
           </div>
-
-
-
-
-
-        </div> -->
+        </div>
 
         <%- include('./footer') %>
     </div>
     <script src="/javascript/homepage.js"></script>
     <script src="/javascript/logout.js"></script>
+    <script src="/javascript/randomize.js"></script>
   </body>

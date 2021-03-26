@@ -125,6 +125,12 @@ main{
     background-color: var(--grey);
 }
 
+.dash_column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+
 
 
 footer{
