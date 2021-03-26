@@ -87,6 +87,7 @@ main{
     align-items: center;
 }
 
+  /* dashboard page styles  */
   .dashboard {
     width: 100%;
     display: flex;
@@ -94,19 +95,6 @@ main{
     align-items: center;
     justify-content: center;
 }  
-
-
-.wrapper {
-    margin: 5em auto;
-    max-width: 1000px;
-  
-    background-color: #fff;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.06);
-  }
-
-  
-
-
     
 .row {
     margin: 0 -5px;
@@ -130,6 +118,7 @@ main{
     width: 50%;
     padding: 0 10px;
 }
+/* dashboard page styles end */
 
 
 
