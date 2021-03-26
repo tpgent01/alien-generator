@@ -1,4 +1,14 @@
-<%- include('./head') %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/homepage.css">
+    <title>Alien Lifeform Generator</title>
+</head>
+<!-- <%- include('./head') %>  -->
 
   <body>
 
@@ -11,17 +21,31 @@
         <div class="container">
 
             <!-- placeholder -->
-        <div class="grid">
-                
-              </div> 
-        
-          </div>
-          <%- include('./footer') %>
+          
+         <!-- <div class="grid"></div>  -->
 
-        </div>
+         <header class="bg-white shadow">
+            <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+              <h1 class="text-3xl font-bold text-gray-900">
+                Dashboard
+              </h1>
+            </div>
+          </header>
+          <main>
+            <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+              <!-- Replace with your content -->
+              <div class="px-4 py-6 sm:px-0">
+                <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+              </div>
+              <!-- /End replace -->
+            </div>
+          </main>
 
-       
-     
+        </div> 
+
+        <%- include('./footer') %>
+    </div>
+    
     <script src="/javascript/homepage.js"></script>
     <script src="/javascript/logout.js"></script>
   </body>
