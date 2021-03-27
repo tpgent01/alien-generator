@@ -6,88 +6,105 @@
     <div class="dashboard">
       <!-- Sidenav -->
       <%- include('./nav') %>
-
-        <!-- page content -->
         <!-- page content -->
         <div class="container">
 
-          <div class="row">
+          <div>
             <div class="dash_column">
               <div class="card">
-                <form>
-                  <div>
-                    <button id = 'randomName'>Randomize Name</button>
-                    <input type="text" id="lifeformName" name="lifeformName" value="Dufrugia" cols="100" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Backstory</button>
-                    <textarea id="backstory" name="backstory" rows="6" cols="80" readonly>Dufrugia is cocky and self-reliant. It was the only survivor of 173 offspring, the rest were consumed by its parents. Dufrugia is seeking some kind of purpose or answer to existance. Wow, won't it be dissapointed.
-                    </textarea>
-                  </div>
-                  <div>
-                    <button>Randomize Locomotion</button>
-                    <input type="text" id="locomotion" name="locomotion" value="a Muscular Flapper (Avian Locomotion)" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Upper Appendage</button>
-                    <input type="text" id="appendage" name="appendage" value="two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Neck</button>
-                    <input type="text" id="neck" name="neck" value="features" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Head</button>
-                    <input type="text" id="head" name="head" value="'s Humanoid Head with its Enlarged Cranium features" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Facial Features</button>
-                    <input type="text" id="facialFeatures" name="facialFeatures" value="Short Spikes" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Mouth</button>
-                    <input type="text" id="mouth" name="mouth" value="Multiple Rows of Teeth" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Eye</button>
-                    <input type="text" id="eye" name="eye" value="Bulbous" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Nose</button>
-                    <input type="text" id="nose" name="nose" value="Rhinarium" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Ears</button>
-                    <input type="text" id="ears" name="ears" value="Small Humanoid" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Skin</button>
-                    <input type="text" id="skin" name="skin" value="a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Other Features</button>
-                    <input type="text" id="otherFeatures" name="otherFeatures" value="a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae" readonly>
-                  </div>
-                  <div>
-                    <button>Randomize Abilities</button>
-                    <input type="text" id="abilites" name="abilities" value="Flight, Size Control" readonly>
-                  </div>
-                  <input type="submit" value="Generate Alien">
-                </form>
+                <div>
+                  <button id='randomName'>Randomize Name</button>
+                  <input type="text" id="lifeformName" name="lifeformName" value="Dufrugia" cols="100" readonly>
+                </div>
+                <div>
+                  <button id='randomDisposition'>Randomize Disposition</button>
+                  <input type="text" id="lifeformDisposition" name="lifeformDisposition" value="always thinks the glass is half empty, and never feels it gets its fair share." readonly>
+                </div>
+                <div>
+                  <button id='randomBirth'>Randomize Birth</button>
+                  <input type="text" id="lifeformBirth" name="lifeformBirth" value="was hatched after an incubation period of 40 years from a nest of 14 eggs" readonly>
+                </div>
+                <div>
+                  <button id='randomReason'>Randomize Reason</button>
+                  <input type="text" id="lifeformReason" name="lifeformReason" value="is a refugee who lost its homeworld after its species' contributions to the planet's global cooling." readonly>
+                </div>
+                <div>
+                  <button id='randomLocomotion'>Randomize Locomotion</button>
+                  <input type="text" id="lifeformLocomotion" name="lifeformLocomotion" value="a Muscular Flapper (Avian Locomotion)" readonly>
+                </div>
+                <div>
+                  <button id='randomUpper'>Randomize Upper Appendage</button>
+                  <input type="text" id="lifeformUpper" name="lifeformUpper" value="two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger" readonly>
+                </div>
+                <div>
+                  <button id='randomHead'>Randomize Head</button>
+                  <input type="text" id="lifeformHead" name="lifeformHead" value="'s Humanoid Head with its Enlarged Cranium features" readonly>
+                </div>
+                <div>
+                  <button id='randomFace'>Randomize Facial Features</button>
+                  <input type="text" id="lifeformFace" name="lifeformFace" value="Short Spikes" readonly>
+                </div>
+                <div>
+                  <button id='randomMouth'>Randomize Mouth</button>
+                  <input type="text" id="lifeformMouth" name="lifeformMouth" value="Multiple Rows of Teeth" readonly>
+                </div>
+                <div>
+                  <button id='randomEyes'>Randomize Eye</button>
+                  <input type="text" id="lifeformEyes" name="lifeformEyes" value="Bulbous" readonly>
+                </div>
+                <div>
+                  <button id='randomNose'>Randomize Nose</button>
+                  <input type="text" id="lifeformNose" name="lifeformNose" value="Rhinarium" readonly>
+                </div>
+                <div>
+                  <button id='randomEars'>Randomize Ears</button>
+                  <input type="text" id="lifeformEars" name="lifeformEars" value="Small Humanoid" readonly>
+                </div>
+                <div>
+                  <button id='randomSkin'>Randomize Skin</button>
+                  <input type="text" id="lifeformSkin" name="lifeformSkin" value="a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes" readonly>
+                </div>
+                <div>
+                  <button id='randomOther'>Randomize Other Features</button>
+                  <input type="text" id="lifeformOther" name="lifeformOther" value="a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae" readonly>
+                </div>
+                <div>
+                  <button id='randomAbilities'>Randomize Abilities</button>
+                  <textarea id="lifeformAbilities" rows="10" cols="80" readonly>
+                    Flight, Size Control"
+                  </textarea>
+                </div>
+                <div>
+                  <br><br>
+                  <button id='generateLifeform'>Generate Completely New Lifeform</button>
+                  <br>
+                </div>
               </div>
             </div>
             <div class="dash_column">
-              <div class="card">Name:<br>Dufrugia<br><br>
-                Backstory:<br>Dufrugia is cocky and self-reliant. It was the only survivor of 173 offspring, the rest were consumed by its parents. Dufrugia is seeking some kind of purpose or answer to existance. Wow, won't it be dissapointed.<br><br>
-                Physical Description:<br>Dufrugia is a Muscular Flapper (Avian Locomotion) that imposes its will on surrounding objects and entities using its two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger. Dufrugia's Humanoid Head with its Enlarged Cranium features Short Spikes. This does nothing to distract one from its Bulbous eyes, Rhinarium, Small Humanoid ears, and Multiple Rows of Teeth! Dufrugia's epidermis is a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes, but most notably Dufrugia has a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae.<br><br>
-                Abilities: <br>
-                Flight - Many creatures have vestigial wings or the ability to hover. This gives your character the ability to fly, baby! <br>
-                Size Control - There are easier way to do this than going on a diet.
+              <div class="card">
+                <form>
+                  Name:<br>
+                  <input type="text" id="name" name="name" value="Dufrugia" readonly><br><br>
+                  Backstory:<br>
+                  <textarea id="backstory" rows="4" cols="80" readonly>
+                    Dufrugia is cocky and self-reliant. It was the only survivor of 173 offspring, the rest were consumed by its parents. Dufrugia is seeking some kind of purpose or answer to existance. Wow, won't it be dissapointed.<br><br>
+                  </textarea><br><br>
+                    Physical Description:<br>
+                  <textarea id="physicalDescription" rows="10" cols="80" readonly>
+                    Dufrugia is a Muscular Flapper (Avian Locomotion) that imposes its will on surrounding objects and entities using its two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger. Dufrugia's Humanoid Head with its Enlarged Cranium features Short Spikes. This does nothing to distract one from its Bulbous eyes, Rhinarium, Small Humanoid ears, and Multiple Rows of Teeth! Dufrugia's epidermis is a quarter Scaled Skin with Teal and Lavender Trapezoids and three-quarters Translucent Skin with Small Mint and Grey Stripes, but most notably Dufrugia has a multitude of Exposed Cybernetics, a Shell, and a multitude of Antennae.
+                  </textarea><br><br>
+                  Abilities: <br>
+                  <textarea id="abilities" rows=10 cols="80" readonly>
+                    Flight - Many creatures have vestigial wings or the ability to hover. This gives your character the ability to fly, baby!<br>
+                    Size Control - There are easier way to do this than going on a diet.
+                  </textarea>
+                  <br>
+                    <button id="saveLifeform">Save Lifeform</button>
+                </form>
               </div>
+            </div>
           </div>
-        </div>
-        </div>
-
         <%- include('./footer') %>
     </div>
     <script src="/javascript/homepage.js"></script>
