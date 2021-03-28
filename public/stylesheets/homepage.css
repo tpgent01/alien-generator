@@ -123,11 +123,24 @@ main{
 
 #lifeformAbilities {
     width: 90%;
-    height: 80px;
+    height:50%;
 }
 
 #abilities {
     width: 80%;
+    height: 50%;
+}
+
+#physicalDescription {
+    height: 50%;
+    width: 90%;
+    line-height: 1.8;
+}
+
+#backstory {
+    line-height: 1.8;
+    height: 50%;
+    
 }
 
 #randomName {
@@ -423,9 +436,14 @@ main{
      color: #ffb703;
  }
 
+ .card, h3 {
+     font-weight: bold;
+ }
+
  /* card input fields */
  .card input {
-    width: 80%;
+    width: 90%;
+    display: inline-block;
     height: 30px;
     padding: 5px 20px;
     outline: none;
@@ -436,7 +454,11 @@ main{
     margin: 10px 0;
     outline-style: none;
     font-size: 1rem;
+    cursor: pointer;
+    box-sizing: border-box;
  }
+
+
 
  /* card textarea fields */
  .card textarea {
@@ -452,10 +474,13 @@ main{
      background-color: var(--dark-blue);
      color: var(--white);
      cursor: pointer;
+     box-sizing: border-box;
  }
+
  .card textarea:hover {
      color: #ffb703;
  }
+
 
  .scroll::-webkit-scrollbar {
     display: none;
@@ -504,6 +529,12 @@ footer p{
         display: block;
         margin-bottom: 20px;
     }
+
+    .dash_column {
+        width: 95%;
+        display: block;
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width: 892px){
@@ -548,6 +579,12 @@ footer p{
         width: 100%;
         display: block;
         margin-bottom: 20px;
+    }
+
+     .dash_column {
+        width: 95%;
+        display: block;
+        margin: 20px;
     }
 
 }
