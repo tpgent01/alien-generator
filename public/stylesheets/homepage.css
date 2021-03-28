@@ -448,6 +448,7 @@ main{
      font-size: 1rem;
      background-color: var(--dark-blue);
      color: var(--white);
+     cursor: pointer;
  }
  .card textarea:hover {
      color: #ffb703;
