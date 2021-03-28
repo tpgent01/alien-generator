@@ -12,6 +12,7 @@
           <div>
             <div class="dash_column">
               <div class="card">
+                <h1>Build Lifeform</h1>
                 <div>
                   <button id='randomName'>Randomize Name</button>
                   <input type="text" id="lifeformName" name="lifeformName" value="Dufrugia" cols="100" readonly>
@@ -83,8 +84,9 @@
             </div>
             <div class="dash_column">
               <div class="card">
+                <h1>New Lifeform</h1>
                 <form>
-                  Name:<br>
+                  <h4>Name:</h4><br>
                   <input type="text" id="name" name="name" value="Dufrugia" readonly><br><br>
                   Backstory:<br>
                   <textarea id="backstory" rows="4" cols="80" readonly>
@@ -105,8 +107,10 @@
               </div>
             </div>
           </div>
-        <%- include('./footer') %>
+          <%- include('./footer') %>
     </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
     <script src="/javascript/homepage.js"></script>
     <script src="/javascript/logout.js"></script>
     <script src="/javascript/randomize.js"></script>

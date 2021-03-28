@@ -88,14 +88,6 @@ main{
 }
 
   /* dashboard page styles  */
-  .dashboard {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}  
-    
 .row {
     margin: 0 -5px;
 }
@@ -111,13 +103,343 @@ main{
     padding: 16px;
     text-align: center;
     background-color: var(--grey);
-}
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+} 
 
 .dash_column {
     float: left;
     width: 50%;
-    padding: 0 10px;
+    padding: 5px 10px;
+    padding-top: 10px;
 }
+
+#lifeformAbilities {
+    width: 90%;
+}
+
+#abilities {
+    width: 80%;
+}
+
+#randomName {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color:var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+}
+
+#randomName:hover {
+   color: #ffb703;
+}
+
+#randomDisposition {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color:var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+}
+#randomDisposition:hover {
+    color: #ffb703;
+ }
+
+ #randomBirth {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+ #randomBirth:hover {
+    color: #ffb703;
+ }
+ 
+ #randomReason {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+ #randomReason:hover {
+    color: #ffb703;
+ }
+
+ #randomLocomotion {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomLocomotion:hover {
+    color: #ffb703;
+ }
+
+ #randomUpper {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomUpper:hover {
+     color: #ffb703;
+ }
+
+ #randomHead {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomHead:hover {
+    color: #ffb703;
+ }
+
+ #randomFace {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomFace:hover {
+    color: #ffb703;
+ }
+
+ #randomMouth {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomMouth:hover {
+    color: #ffb703;
+ }
+
+ #randomEyes {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomEyes:hover {
+     color: #ffb703;
+ }
+
+ #randomNose {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomNose:hover {
+    color: #ffb703;
+ }
+
+ #randomEars {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomEars:hover {
+     color: #ffb703;
+ }
+
+ #randomSkin {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomSkin:hover {
+     color: #ffb703;
+ }
+
+ #randomOther {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomOther:hover {
+    color: #ffb703;
+ }
+
+ #randomAbilities {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #randomAbilities:hover {
+     color: #ffb703;
+ }
+
+ #generateLifeform {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #generateLifeform:hover {
+    color: #ffb703;
+ }
+
+ #saveLifeform {
+    font-size: 15px;
+    border-radius:8px;
+    padding: 5px 10px;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px;
+ }
+
+ #saveLifeform:hover {
+     color: #ffb703;
+ }
+
+ .card input {
+     display: inline-block;
+    width: 80%;
+    height: 30px;
+    padding: 5px 10px;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 8px;
+    margin: 10px  0;
+    outline-style: none;
+    font-size: 1rem;
+ }
+
+ .card textarea {
+     width: 80%;
+     height: 80px;
+     padding: 8px 10px;
+     outline: none;
+     border-radius: 8px;
+     border: none;
+     margin: 8px  0;
+     outline-style: none;
+     font-size: 1rem;
+ }
+ 
+ #name {
+     padding-bottom: 8px;
+ }
+ 
 
 /* dashboard page styles end */
 
