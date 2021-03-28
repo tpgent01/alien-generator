@@ -90,8 +90,9 @@ main{
   /* dashboard page styles  */
 
   .dashboard-container {
-      background: url('../assets/images/lifeform_background.jpg')
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/lifeform_background.jpg');
   }
+
 .row {
     margin: 0 -5px;
 }
@@ -103,6 +104,9 @@ main{
 }
 
 .card {
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
     padding: 10px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.158);
@@ -110,8 +114,6 @@ main{
     -webkit-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     border-radius: 20px;
-    text-align: center;
-    justify-content: center;
 } 
 
 .dash_column {
@@ -122,24 +124,28 @@ main{
 }
 
 #lifeformAbilities {
-    width: 90%;
-    height:50%;
+    width: 100%;
+    height: 50%;
+    line-height: 1.5;
 }
 
 #abilities {
-    width: 80%;
+    width: 100%;
     height: 50%;
+    line-height: 1.5;
 }
 
 #physicalDescription {
-    height: 50%;
-    width: 90%;
-    line-height: 1.8;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    border-radius: 8px;
 }
 
 #backstory {
-    line-height: 1.8;
-    height: 50%;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
     
 }
 
@@ -179,6 +185,7 @@ main{
 
  #randomBirth {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -195,6 +202,7 @@ main{
  
  #randomReason {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -211,6 +219,7 @@ main{
 
  #randomLocomotion {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -228,6 +237,7 @@ main{
 
  #randomUpper {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -244,6 +254,7 @@ main{
 
  #randomHead {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -260,6 +271,7 @@ main{
 
  #randomFace {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -277,6 +289,7 @@ main{
 
  #randomMouth {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -295,6 +308,7 @@ main{
 
  #randomEyes {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -314,6 +328,7 @@ main{
 
  #randomNose {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -331,6 +346,7 @@ main{
 
  #randomEars {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -348,6 +364,7 @@ main{
 
  #randomSkin {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -366,6 +383,7 @@ main{
 
  #randomOther {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -384,6 +402,7 @@ main{
 
  #randomAbilities {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -402,12 +421,12 @@ main{
 
  #generateLifeform {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
     background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
@@ -420,6 +439,7 @@ main{
 
  #saveLifeform {
     font-size: 15px;
+    font-weight: 500;
     border-radius:8px;
     padding: 5px 10px;
     border: none;
@@ -438,6 +458,9 @@ main{
 
  .card, h3 {
      font-weight: bold;
+     color: var(--white);
+     text-align: center;
+     padding: 4px;
  }
 
  /* card input fields */
@@ -462,8 +485,7 @@ main{
 
  /* card textarea fields */
  .card textarea {
-     width: 90%;
-     height: 80px;
+   
      padding: 8px 10px;
      outline: none;
      border-radius: 8px;
@@ -475,6 +497,9 @@ main{
      color: var(--white);
      cursor: pointer;
      box-sizing: border-box;
+     padding-bottom: 5px;
+   
+
  }
 
  .card textarea:hover {
