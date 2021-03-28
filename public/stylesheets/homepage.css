@@ -88,6 +88,10 @@ main{
 }
 
   /* dashboard page styles  */
+
+  .dashboard-container {
+      background: url('../assets/images/lifeform_background.jpg')
+  }
 .row {
     margin: 0 -5px;
 }
@@ -99,8 +103,7 @@ main{
 }
 
 .card {
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 10px;
     text-align: center;
     background-color: var(--grey);
     border-radius: 20px;
@@ -117,6 +120,7 @@ main{
 
 #lifeformAbilities {
     width: 90%;
+    height: 80px;
 }
 
 #abilities {
@@ -128,9 +132,9 @@ main{
     border-radius:8px;
     padding: 5px 10px;
     border: none;
-    background-color:var(--dark-blue);
+    font-weight: 500;
+    background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
@@ -145,12 +149,13 @@ main{
     border-radius:8px;
     padding: 5px 10px;
     border: none;
-    background-color:var(--dark-blue);
+    font-weight: 500;
+    background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
 }
 #randomDisposition:hover {
     color: #ffb703;
@@ -163,10 +168,10 @@ main{
     border: none;
     background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
  #randomBirth:hover {
     color: #ffb703;
@@ -212,7 +217,6 @@ main{
     border: none;
     background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
@@ -229,7 +233,6 @@ main{
     border: none;
     background-color: var(--dark-blue);
     color: var(--white);
-    transition: transform .3s ease-in-out;
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
@@ -267,6 +270,7 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #randomMouth:hover {
@@ -289,6 +293,8 @@ main{
  #randomEyes:hover {
      color: #ffb703;
  }
+
+
 
  #randomNose {
     font-size: 15px;
@@ -335,6 +341,7 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #randomSkin:hover {
@@ -352,6 +359,7 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #randomOther:hover {
@@ -369,6 +377,7 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #randomAbilities:hover {
@@ -386,6 +395,7 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #generateLifeform:hover {
@@ -403,29 +413,31 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+
  }
 
  #saveLifeform:hover {
      color: #ffb703;
  }
 
+ /* card input fields */
  .card input {
-     display: inline-block;
     width: 80%;
     height: 30px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     outline: none;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-radius: 8px;
-    margin: 10px  0;
+    margin: 10px 0;
     outline-style: none;
     font-size: 1rem;
  }
 
+ /* card textarea fields */
  .card textarea {
-     width: 80%;
+     width: 90%;
      height: 80px;
      padding: 8px 10px;
      outline: none;
@@ -434,12 +446,22 @@ main{
      margin: 8px  0;
      outline-style: none;
      font-size: 1rem;
+     background-color: var(--dark-blue);
+     color: var(--white);
  }
+ .card textarea:hover {
+     color: #ffb703;
+ }
+
+ .scroll::-webkit-scrollbar {
+    display: none;
+  }
  
  #name {
      padding-bottom: 8px;
  }
  
+
 
 /* dashboard page styles end */
 
