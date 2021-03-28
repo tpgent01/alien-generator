@@ -23,13 +23,17 @@
 
 ## 🧠User Story
 ```
-Insert Here
+AS A game enthusiast
+I WANT an alien lifeform generator
+SO THAT I can create randomly generated characters that include name, backstory, features, abilities, and description
 ```
 
 
 ## 🧩Acceptance Criteria
 ```
-Insert Here
+GIVEN a random alien lifeform generator
+WHEN I visit the site for the first time
+THEN I am presented with the homepage, which 
 ```
 
 
