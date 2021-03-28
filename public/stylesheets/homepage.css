@@ -105,7 +105,10 @@ main{
 .card {
     padding: 10px;
     text-align: center;
-    background-color: var(--grey);
+    background-color: rgba(255, 255, 255, 0.158);
+    box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
+    -moz-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     border-radius: 20px;
     text-align: center;
     justify-content: center;
