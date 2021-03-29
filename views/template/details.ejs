@@ -13,74 +13,107 @@
 
 <body>
     <%- include('./nav') %>
-    <div class="wrapper">
-        <div class="card">
-            <div class="mini-box">
-                <div class="inner-mini">
-                    <h1>
-                        <%= alien.lifeform.name %>
-                    </h1>
-                    <p class="info backstory"><span>Backstory:</span>
-                        <%= alien.lifeform.backstory %>
+        <div class="wrapper">
+            <div class="card">
+                <div class="mini-box">
+                    <div class="inner-mini">
+                        <h1>
+                            <%= alien.lifeform.name %>
+                        </h1>
+                        <p class="info backstory"><span>Backstory:</span>
+                            <%= alien.lifeform.backstory %>
+                        </p>
+                        <p class="info"><span>Locamotion:</span>
+                            <%= alien.lifeform.locomotion %>
+                        </p>
+                    </div>
+
+                    <div class="bottom-panel">
+                        <span>Abilities</span>
+                        <div class="abilities">
+                            <% alien.lifeform.abilities.forEach(ability=>{%>
+                                <div class="ability">
+                                    <%= ability.name %>
+                                </div>
+
+                                <%}) %>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <p class="info"><span>UpperAppendageType:</span>
+                        <%= alien.lifeform.upperAppendageType %>
                     </p>
-                    <p class="info"><span>Locamotion:</span>
-                        <%= alien.lifeform.locomotion %>
+                    <p class="info"><span>head:</span>
+                        <%=alien.lifeform.head %>
                     </p>
+                    <p class="info"><span>facial Features:</span>
+                        <%=alien.facialFeatures %>
+                    </p>
+                    <p class="info"><span>mouth:</span>
+                        <%=alien.lifeform.mouth %>
+                    </p>
+                    <p class="info"><span>eyes:</span>
+                        <%=alien.lifeform.eyes %>
+                    </p>
+                    <p class="info"><span>nose:</span>
+                        <%=alien.lifeform.nose %>
+                    </p>
+                    <p class="info"><span>ears:</span>
+                        <%=alien.lifeform.ears %>
+                    </p>
+                    <p class="info"><span>skin:</span>
+                        <%=alien.lifeform.skin %>
+                    </p>
+                    <p class="info"><span>otherFeatures:</span>
+                        <%=alien.lifeform.otherFeatures %>
+                    </p>
+                    <p class="info"><span>Physical description:</span>
+                        <%=alien.lifeform.physicalDescription %>
+                    </p>
+
+                    <form class="comment-form">
+                        <div class="textarea">
+                            <textarea name="comment-body" placeholder="Leave a comment"></textarea>
+                        </div>
+
+                        <div class="comment-btn">
+                            <button type="submit">add comment</button>
+                            <a href="#" class="upvote-btn upvote">Upvote</a>
+                        </div>
+                    </form>
+
+
+                    <div class="recent-comments">
+                        <h4 class="recent-comment-tile">Recent Comments</h4>
+
+                        <% for(let i=0; i < alien.comments.length; i++){%>
+                            <p class="recent-comment-body">
+                                -- <%= alien.comments[i].comment_text%>
+
+                            </p>
+                            <span class="date">
+                                <%= alien.comments[i].created_at %>
+                            </span>
+                            <% } %>
+
+
+                    </div>
                 </div>
 
-                <div class="bottom-panel">
-                    <span>Abilities</span>
-                    <div class="abilities">
-                        <% alien.lifeform.abilities.forEach(ability=>{%>
-                            <div class="ability">
-                                <%= ability.name %>
-                            </div>
-
-                            <%}) %>
-                    </div>
-                </div>
 
             </div>
-            <div class="content">
-                <p class="info"><span>UpperAppendageType:</span>
-                    <%= alien.lifeform.upperAppendageType %>
-                </p>
-                <p class="info"><span>head:</span>
-                    <%=alien.lifeform.head %>
-                </p>
-                <p class="info"><span>facial Features:</span>
-                    <%=alien.facialFeatures %>
-                </p>
-                <p class="info"><span>mouth:</span><%=alien.lifeform.mouth %></p>
-                <p class="info"><span>eyes:</span> <%=alien.lifeform.eyes %></p>
-                <p class="info"><span>nose:</span> <%=alien.lifeform.nose %></p>
-                <p class="info"><span>ears:</span><%=alien.lifeform.ears %> </p>
-                <p class="info"><span>skin:</span> <%=alien.lifeform.skin %></p>
-                <p class="info"><span>otherFeatures:</span> <%=alien.lifeform.otherFeatures %> </p>
-                <p class="info"><span>Physical description:</span> <%=alien.lifeform.physicalDescription %> </p>
-                <a href="#" class="comment">Leave a comment</a>
-                <a href="#" class="upvote-btn upvote">Upvote</a>
-                <form class="comment-form">
-                    <div>
-                      <textarea name="comment-body"></textarea>
-                    </div>
-                  
-                    <div>
-                      <button type="submit" id="submit-btn">add comment</button>
-                    </div>
-                </form>
-                <%=alien.comments %>
-            </div>
-            
+
+
 
         </div>
-        
-        
+        <% if(loggedIn) { %>
+            <script src="/javascript/homepage.js"></script>
+            <script src="/javascript/upvote.js"></script>
+            <script src="/javascript/comment.js"></script>
+            <%}%>
 
-    </div>
-    <script src="/javascript/homepage.js"></script>
-    <script src="/javascript/upvote.js"></script>
-    <script src="/javascript/comment.js"></script>
 </body>
 
 </html>
