@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+:root{
+    --dark-blue: #181E36;
+    --light-blue: #2d3f70;
+    --purple: #5A5DF5;
+    --grey: #a8a8a8 ;
+    --white: #E5EBF7;
+    --body-bg: #e7e7e9;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+span{
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: left;
+}
+h1, .info, span{
+    color: var(--white);
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.wrapper .card{
+    width: 500px;
+    height: 600px;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: width .3s ease-in-out;
+    margin: 2rem;
+    box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+}
+.wrapper .card:hover{
+    width: 1000px;
+
+}
+.wrapper .card:hover ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.wrapper .card .mini-box{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 7rem;
+    left: -6rem;
+    z-index: 20;
+    background-image: linear-gradient(to right top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+}
+.wrapper .card .content{
+    position: relative;
+    left: 16rem;
+    visibility: hidden;
+    opacity: 0;
+}
+.wrapper .card:hover .content{
+    width: 73%;
+    visibility: visible;
+    opacity: 1;
+    overflow-y: scroll;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.wrapper .card .mini-box .inner-mini{
+   display: flex;
+   flex-direction: column;
+}
+.wrapper .card .mini-box .inner-mini .info{
+    text-align: left;
+}
+
+p{
+    max-width: 60ch;
+}
+
+.wrapper .card .mini-box .abilities{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    background-color:#fff;
+}
+.wrapper .card .mini-box .abilities .ability{
+    width: calc(95% / 3);
+    height: 90%;
+    margin: 4px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .card .mini-box .abilities .ability:nth-child(2){
+    border-left: 2px solid rgb(226, 226, 226);
+    border-right: 2px solid  rgb(226, 226, 226);
+}
+.wrapper .card .content .info{
+    color: #000;
+}
+.wrapper .card .content .info span{
+    color: #000;
+    font-weight: 700;
+}
+.wrapper .card .content .comment{
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 12px 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    display: inline-block;
+    transition: opacity .3s ease;
+}
+.wrapper .card .content .comment:hover{
+    opacity: .8;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px){
+    .wrapper .card{
+        height: 350px;
+        transition: height .3s ease;
+        margin-bottom: 5.5rem;
+    }
+    .wrapper .card:hover{
+        width: 500px;
+        height: 1190px;
+    }
+    .wrapper .card .mini-box{
+        top: -6rem;
+        left: 5rem;
+    }
+    .wrapper .card .content{
+        width: 100%; 
+        height: 100%;
+        top: 16.5rem;
+        left: 0;
+    }
+    .wrapper .card:hover .content{
+        left: 4rem;
+    }
+   
+}

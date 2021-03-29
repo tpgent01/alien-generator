@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/stylesheets/styles.css">
+    <title>Card</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="card">
+            <div class="mini-box">
+                <div class="inner-mini">
+                    <h1> <%= alien.lifeform.name %> </h1>
+                    <p class="info"><span>Backstory:</span> <%= alien.lifeform.backstory %></p>
+                    <p class="info"><span>Locamotion:</span><%= alien.lifeform.locomotion %></p>
+                </div>
+
+                <span>Abilities</span>
+                <div class="abilities">
+                    <div class="ability"> <%= ability.name %></div>
+                    <div class="ability"> <%= ability.name %></div>
+                    <div class="ability"> <%= ability.name %></div>
+                </div>
+            </div>
+            <div class="content">
+                <p class="info"><span>UpperAppendageType:</span> <%= alien.lifeform.UpperAppendageType %>
+                </p>
+                <p class="info"><span>neck:</span> <%= alien.features</p>
+                <p class="info"><span>head:</span> s Large Humanoid Head with its Enlarged Cranium features</p>
+                <p class="info"><span>facial Features:</span> a Large Wattle</p>
+                <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
+                <p class="info"><span>eyes:</span> Marbled</p>
+                <p class="info"><span>nose:</span> Proboscis</p>
+                <p class="info"><span>ears:</span> Cat-like</p>
+                <p class="info"><span>skin:</span> a quarter Foliage Mint and three-quarters Shimmering Apricot</p>
+                <p class="info"><span>otherFeatures:</span> A very Bad Rash</p>
+                <p class="info"><span>Physical description:</span> Charlie is a Average sized Flapper (Avian Locamotion)
+                    that manipulates it's immediate enviornment using it's 4 Long Multijointed (Insectoid/Arachnid-like)
+                    Upper Limbs. Each one with a suprisingly dexterous pincher at its end. Charlie's Large Humanoid Head
+                    with its Enlarged Cranium features a Large Wattle. Despite this, you can't help but notice it's
+                    Marbled eyes, Proboscis, Cat-like ears, and Multiple Rows of Long Teeth! Charlie's epidermis is a
+                    quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very Bad
+                    Rash.</p>
+                <a href="#" class="comment">Leave a comment</a>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <script src="/javascript/homepage.js"></script>
+    <script src="../../controllers/api/alien-routes.js"></script>
+</body>
+
+</html>

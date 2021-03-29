@@ -192,7 +192,7 @@ main .cta a:hover{
     font-weight: 700;
 }
 /* END OF HOMEPAGE CARD */
-.dashboard {
+.container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -227,42 +227,7 @@ main .cta a:hover{
     border-radius: 20px;
 } 
 
-
-
-.dash_column {
-  float: left;
-    width: 50%;
-    padding: 5px 10px;
-    padding-top: 10px;
-}
-
-#lifeformAbilities {
-    width: 100%;
-    height: 50%;
-    line-height: 1.5;
-}
-
-#abilities {
-    width: 100%;
-    height: 50%;
-    line-height: 1.5;
-}
-
-#physicalDescription {
-    width: 100%;
-    height: 100%;
-    line-height: 1.5;
-    border-radius: 8px;
-}
-
-#backstory {
-    line-height: 1.5;
-    width: 100%;
-    height: 100%;
-    
-}
-
-#randomName {
+.card button {
     font-size: 15px;
     border-radius:8px;
     padding: 5px 10px;
@@ -274,305 +239,19 @@ main .cta a:hover{
     text-align: center;
     margin: 2px 2px;
     vertical-align: bottom;
-    
+    outline: none;
 }
 
-#randomName:hover {
-   color: #ffb703;
+.card button:hover {
+    color: #ffb703;
+ }
+
+.dash_column {
+  float: left;
+    width: 50%;
+    padding: 5px 10px;
+    padding-top: 10px;
 }
-
-
-
-
-#randomDisposition {
-    font-size: 15px;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    font-weight: 500;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
-}
-#randomDisposition:hover {
-    color: #ffb703;
- }
-
- #randomBirth {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
- #randomBirth:hover {
-    color: #ffb703;
- }
- 
- #randomReason {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
- #randomReason:hover {
-    color: #ffb703;
- }
-
- #randomLocomotion {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomLocomotion:hover {
-    color: #ffb703;
- }
-
- #randomUpper {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomUpper:hover {
-     color: #ffb703;
- }
-
- #randomHead {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomHead:hover {
-    color: #ffb703;
- }
-
- #randomFace {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomFace:hover {
-    color: #ffb703;
- }
-
- #randomMouth {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #randomMouth:hover {
-    color: #ffb703;
- }
-
- #randomEyes {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomEyes:hover {
-     color: #ffb703;
- }
-
-
-
- #randomNose {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomNose:hover {
-    color: #ffb703;
- }
-
- #randomEars {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
- }
-
- #randomEars:hover {
-     color: #ffb703;
- }
-
- #randomSkin {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #randomSkin:hover {
-     color: #ffb703;
- }
-
- #randomOther {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #randomOther:hover {
-    color: #ffb703;
- }
-
- #randomAbilities {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #randomAbilities:hover {
-     color: #ffb703;
- }
-
- #generateLifeform {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #generateLifeform:hover {
-    color: #ffb703;
- }
-
- #saveLifeform {
-    font-size: 15px;
-    font-weight: 500;
-    border-radius:8px;
-    padding: 5px 10px;
-    border: none;
-    background-color: var(--dark-blue);
-    color: var(--white);
-    transition: transform .3s ease-in-out;
-    cursor: pointer;
-    text-align: center;
-    margin: 2px 2px;
-
- }
-
- #saveLifeform:hover {
-     color: #ffb703;
- }
 
  .card, h3 {
      font-weight: bold;
@@ -614,7 +293,9 @@ main .cta a:hover{
      cursor: pointer;
      box-sizing: border-box;
      padding-bottom: 5px;
-   
+     width: 100%;
+     height: 50%;
+     line-height: 1.5;
 
  }
 
