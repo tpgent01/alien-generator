@@ -14,17 +14,14 @@
         <div class="bottom-panel">
             <span>abilities</span>
             <div class="abilities">
-                <% for(let i=0; i< alien.lifeform.abilities; i++){%>
+
+                <% alien.lifeform.abilities.forEach(ability=>{%>
                     <div class="ability">
-                        <%= alien.lifeform.abilities[i].name %>
+                        <%= ability.name %>
                     </div>
-                    <div class="ability">
-                        <%= alien.lifeform.abilities[i].name %>
-                    </div>
-                    <div class="ability">
-                        <%= alien.lifeform.abilities[i].name %>
-                    </div>
-                    <%} %>
+
+                    <%}) %>
+
 
             </div>
         </div>
