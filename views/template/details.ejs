@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/nav-styles.css">
     <title>Card</title>
 </head>
 
 <body>
-
+    <%- include('./nav') %>
     <div class="wrapper">
         <div class="card">
             <div class="mini-box">
@@ -63,7 +64,7 @@
                     quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very Bad
                     Rash.</p>
                 <a href="#" class="comment">Leave a comment</a>
-                    <a href="#" class="upvote">Upvote</a>
+                    <a href="#" class="upvote-btn">Upvote</a>
             </div>
 
 
@@ -73,6 +74,7 @@
     </div>
     <script src="/javascript/homepage.js"></script>
     <script src="../../controllers/api/alien-routes.js"></script>
+    <script src="/javascript/upvote.js"></script>
 </body>
 
 </html>
