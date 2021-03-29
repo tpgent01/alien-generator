@@ -76,7 +76,7 @@ router.get('/alien/:id', (req, res) => {
 
       const alien = dbAlienData.get({ plain: true });
 
-      res.render('single-alien', {
+      res.render('template/details', {
         alien,
         loggedIn: req.session.loggedIn
       });
