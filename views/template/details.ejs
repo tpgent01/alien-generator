@@ -59,16 +59,28 @@
                 <p class="info"><span>otherFeatures:</span> <%=alien.lifeform.otherFeatures %> </p>
                 <p class="info"><span>Physical description:</span> <%=alien.lifeform.physicalDescription %> </p>
                 <a href="#" class="comment">Leave a comment</a>
-                    <a href="#" class="upvote-btn">Upvote</a>
+                <a href="#" class="upvote-btn upvote">Upvote</a>
+                <form class="comment-form">
+                    <div>
+                      <textarea name="comment-body"></textarea>
+                    </div>
+                  
+                    <div>
+                      <button type="submit">add comment</button>
+                    </div>
+                </form>
+                <%=alien.comments %>
             </div>
-
+            
 
         </div>
-
+        
+        
 
     </div>
-     <script src="/javascript/homepage.js"></script> 
+    <script src="/javascript/homepage.js"></script>
     <script src="/javascript/upvote.js"></script>
+    <script src="/javascript/comment.js"></script>
 </body>
 
 </html>

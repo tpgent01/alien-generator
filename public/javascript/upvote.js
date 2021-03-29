@@ -1,7 +1,7 @@
 async function upvoteClickHandler(event) {
     event.preventDefault();
 
-    // get the post id from the browser address
+    // get the alien id from the browser address
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
