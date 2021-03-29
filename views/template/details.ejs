@@ -40,11 +40,10 @@
                         </div>
                     </div>
 
-<<<<<<< HEAD
                 </div>
                 <div class="content">
                     <p class="info"><span>UpperAppendageType:</span>
-                        <%= alien.lifeform.UpperAppendageType %>
+                        <%= alien.lifeform.upperAppendageType %>
                     </p>
                     <p class="info"><span>head:</span>
                         <%=alien.lifeform.head %>
@@ -52,79 +51,69 @@
                     <p class="info"><span>facial Features:</span>
                         <%=alien.facialFeatures %>
                     </p>
-                    <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
-                    <p class="info"><span>eyes:</span> Marbled</p>
-                    <p class="info"><span>nose:</span> Proboscis</p>
-                    <p class="info"><span>ears:</span> Cat-like</p>
-                    <p class="info"><span>skin:</span> a quarter Foliage Mint and three-quarters Shimmering Apricot</p>
-                    <p class="info"><span>otherFeatures:</span> A very Bad Rash</p>
-                    <p class="info"><span>Physical description:</span> Charlie is a Average sized Flapper (Avian
-                        Locamotion)
-                        that manipulates it's immediate enviornment using it's 4 Long Multijointed
-                        (Insectoid/Arachnid-like)
-                        Upper Limbs. Each one with a suprisingly dexterous pincher at its end. Charlie's Large Humanoid
-                        Head
-                        with its Enlarged Cranium features a Large Wattle. Despite this, you can't help but notice it's
-                        Marbled eyes, Proboscis, Cat-like ears, and Multiple Rows of Long Teeth! Charlie's epidermis is
-                        a
-                        quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very
-                        Bad
-                        Rash.</p>
-                    <a href="#" class="comment">Leave a comment</a>
-                    <a href="#" class="upvote-btn">Upvote</a>
+                    <p class="info"><span>mouth:</span>
+                        <%=alien.lifeform.mouth %>
+                    </p>
+                    <p class="info"><span>eyes:</span>
+                        <%=alien.lifeform.eyes %>
+                    </p>
+                    <p class="info"><span>nose:</span>
+                        <%=alien.lifeform.nose %>
+                    </p>
+                    <p class="info"><span>ears:</span>
+                        <%=alien.lifeform.ears %>
+                    </p>
+                    <p class="info"><span>skin:</span>
+                        <%=alien.lifeform.skin %>
+                    </p>
+                    <p class="info"><span>otherFeatures:</span>
+                        <%=alien.lifeform.otherFeatures %>
+                    </p>
+                    <p class="info"><span>Physical description:</span>
+                        <%=alien.lifeform.physicalDescription %>
+                    </p>
+
+                    <form class="comment-form">
+                        <div class="textarea">
+                            <textarea name="comment-body" placeholder="Leave a comment"></textarea>
+                        </div>
+
+                        <div class="comment-btn">
+                            <button type="submit">add comment</button>
+                            <a href="#" class="upvote-btn upvote">Upvote</a>
+                        </div>
+                    </form>
+
+
+                    <div class="recent-comments">
+                        <h4 class="recent-comment-tile">Recent Comments</h4>
+
+                        <% for(let i=0; i < alien.comments.length; i++){%>
+                            <p class="recent-comment-body">
+                                -- <%= alien.comments[i].comment_text%>
+
+                            </p>
+                            <span class="date">
+                                <%= alien.comments[i].created_at %>
+                            </span>
+                            <% } %>
+
+
+                    </div>
                 </div>
 
 
             </div>
 
 
-        </div>
-        <script src="/javascript/homepage.js"></script>
-        <script src="../../controllers/api/alien-routes.js"></script>
-        <script src="/javascript/upvote.js"></script>
-=======
-            </div>
-            <div class="content">
-                <p class="info"><span>UpperAppendageType:</span>
-                    <%= alien.lifeform.upperAppendageType %>
-                </p>
-                <p class="info"><span>head:</span>
-                    <%=alien.lifeform.head %>
-                </p>
-                <p class="info"><span>facial Features:</span>
-                    <%=alien.facialFeatures %>
-                </p>
-                <p class="info"><span>mouth:</span><%=alien.lifeform.mouth %></p>
-                <p class="info"><span>eyes:</span> <%=alien.lifeform.eyes %></p>
-                <p class="info"><span>nose:</span> <%=alien.lifeform.nose %></p>
-                <p class="info"><span>ears:</span><%=alien.lifeform.ears %> </p>
-                <p class="info"><span>skin:</span> <%=alien.lifeform.skin %></p>
-                <p class="info"><span>otherFeatures:</span> <%=alien.lifeform.otherFeatures %> </p>
-                <p class="info"><span>Physical description:</span> <%=alien.lifeform.physicalDescription %> </p>
-                <a href="#" class="comment">Leave a comment</a>
-                <a href="#" class="upvote-btn upvote">Upvote</a>
-                <form class="comment-form">
-                    <div>
-                      <textarea name="comment-body"></textarea>
-                    </div>
-                  
-                    <div>
-                      <button type="submit">add comment</button>
-                    </div>
-                </form>
-                <%=alien.comments %>
-            </div>
-            
 
         </div>
-        
-        
+        <% if(loggedIn) { %>
+            <script src="/javascript/homepage.js"></script>
+            <script src="/javascript/upvote.js"></script>
+            <script src="/javascript/comment.js"></script>
+            <%}%>
 
-    </div>
-    <script src="/javascript/homepage.js"></script>
-    <script src="/javascript/upvote.js"></script>
-    <script src="/javascript/comment.js"></script>
->>>>>>> develop
 </body>
 
 </html>
