@@ -12,69 +12,74 @@
 
 <body>
     <%- include('./nav') %>
-    <div class="wrapper">
-        <div class="card">
-            <div class="mini-box">
-                <div class="inner-mini">
-                    <h1>
-                        <%= alien.lifeform.name %>
-                    </h1>
-                    <p class="info backstory"><span>Backstory:</span>
-                        <%= alien.lifeform.backstory %>
-                    </p>
-                    <p class="info"><span>Locamotion:</span>
-                        <%= alien.lifeform.locomotion %>
-                    </p>
-                </div>
-
-                <div class="bottom-panel">
-                    <span>Abilities</span>
-                    <div class="abilities">
-                        <% alien.lifeform.abilities.forEach(ability=>{%>
-                            <div class="ability">
-                                <%= ability.name %>
-                            </div>
-
-                            <%}) %>
+        <div class="wrapper">
+            <div class="card">
+                <div class="mini-box">
+                    <div class="inner-mini">
+                        <h1>
+                            <%= alien.lifeform.name %>
+                        </h1>
+                        <p class="info backstory"><span>Backstory:</span>
+                            <%= alien.lifeform.backstory %>
+                        </p>
+                        <p class="info"><span>Locamotion:</span>
+                            <%= alien.lifeform.locomotion %>
+                        </p>
                     </div>
+
+                    <div class="bottom-panel">
+                        <span>Abilities</span>
+                        <div class="abilities">
+                            <% alien.lifeform.abilities.forEach(ability=>{%>
+                                <div class="ability">
+                                    <%= ability.name %>
+                                </div>
+
+                                <%}) %>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <p class="info"><span>UpperAppendageType:</span>
+                        <%= alien.lifeform.UpperAppendageType %>
+                    </p>
+                    <p class="info"><span>head:</span>
+                        <%=alien.lifeform.head %>
+                    </p>
+                    <p class="info"><span>facial Features:</span>
+                        <%=alien.facialFeatures %>
+                    </p>
+                    <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
+                    <p class="info"><span>eyes:</span> Marbled</p>
+                    <p class="info"><span>nose:</span> Proboscis</p>
+                    <p class="info"><span>ears:</span> Cat-like</p>
+                    <p class="info"><span>skin:</span> a quarter Foliage Mint and three-quarters Shimmering Apricot</p>
+                    <p class="info"><span>otherFeatures:</span> A very Bad Rash</p>
+                    <p class="info"><span>Physical description:</span> Charlie is a Average sized Flapper (Avian
+                        Locamotion)
+                        that manipulates it's immediate enviornment using it's 4 Long Multijointed
+                        (Insectoid/Arachnid-like)
+                        Upper Limbs. Each one with a suprisingly dexterous pincher at its end. Charlie's Large Humanoid
+                        Head
+                        with its Enlarged Cranium features a Large Wattle. Despite this, you can't help but notice it's
+                        Marbled eyes, Proboscis, Cat-like ears, and Multiple Rows of Long Teeth! Charlie's epidermis is
+                        a
+                        quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very
+                        Bad
+                        Rash.</p>
+                    <a href="#" class="comment">Leave a comment</a>
+                    <a href="#" class="upvote-btn">Upvote</a>
                 </div>
 
-            </div>
-            <div class="content">
-                <p class="info"><span>UpperAppendageType:</span>
-                    <%= alien.lifeform.UpperAppendageType %>
-                </p>
-                <p class="info"><span>head:</span>
-                    <%=alien.lifeform.head %>
-                </p>
-                <p class="info"><span>facial Features:</span>
-                    <%=alien.facialFeatures %>
-                </p>
-                <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
-                <p class="info"><span>eyes:</span> Marbled</p>
-                <p class="info"><span>nose:</span> Proboscis</p>
-                <p class="info"><span>ears:</span> Cat-like</p>
-                <p class="info"><span>skin:</span> a quarter Foliage Mint and three-quarters Shimmering Apricot</p>
-                <p class="info"><span>otherFeatures:</span> A very Bad Rash</p>
-                <p class="info"><span>Physical description:</span> Charlie is a Average sized Flapper (Avian Locamotion)
-                    that manipulates it's immediate enviornment using it's 4 Long Multijointed (Insectoid/Arachnid-like)
-                    Upper Limbs. Each one with a suprisingly dexterous pincher at its end. Charlie's Large Humanoid Head
-                    with its Enlarged Cranium features a Large Wattle. Despite this, you can't help but notice it's
-                    Marbled eyes, Proboscis, Cat-like ears, and Multiple Rows of Long Teeth! Charlie's epidermis is a
-                    quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very Bad
-                    Rash.</p>
-                <a href="#" class="comment">Leave a comment</a>
-                    <a href="#" class="upvote-btn">Upvote</a>
+
             </div>
 
 
         </div>
-
-
-    </div>
-    <script src="/javascript/homepage.js"></script>
-    <script src="../../controllers/api/alien-routes.js"></script>
-    <script src="/javascript/upvote.js"></script>
+        <script src="/javascript/homepage.js"></script>
+        <script src="../../controllers/api/alien-routes.js"></script>
+        <script src="/javascript/upvote.js"></script>
 </body>
 
 </html>

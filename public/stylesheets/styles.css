@@ -91,7 +91,7 @@ h1, .info, span{
     overflow-y: scroll;
 }
 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-transform: capitalize;
 }
