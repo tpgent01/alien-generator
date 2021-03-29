@@ -28,6 +28,12 @@
         <div class="cta">
             <a href='/alien/<%= alien.id %>' >See details</a>
             <div>
+                <i class="far fa-comment-dots"></i>
+                <span class="vote">
+                    <%= alien.comments.length %>
+                </span>
+            </div>
+            <div>
                 <i class="far fa-heart"></i>
                 <span class="vote">
                     <%= alien.vote_count %>
