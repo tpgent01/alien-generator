@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         'created_at',
         [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE alien.id = vote.alien_id)'), 'vote_count']
       ],
-      order: [['vote_count', 'DESC']],
+      order: [['created_at', 'DESC']],
       include: [
         {
           model: Comment,
