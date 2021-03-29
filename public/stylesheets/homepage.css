@@ -116,8 +116,10 @@ main{
     border-radius: 20px;
 } 
 
+
+
 .dash_column {
-    float: left;
+  float: left;
     width: 50%;
     padding: 5px 10px;
     padding-top: 10px;
@@ -160,11 +162,16 @@ main{
     cursor: pointer;
     text-align: center;
     margin: 2px 2px;
+    vertical-align: bottom;
+    
 }
 
 #randomName:hover {
    color: #ffb703;
 }
+
+
+
 
 #randomDisposition {
     font-size: 15px;
@@ -465,9 +472,9 @@ main{
 
  /* card input fields */
  .card input {
-    width: 90%;
+    width: 100%;
     display: inline-block;
-    height: 30px;
+    height: 40px;
     padding: 5px 20px;
     outline: none;
     border-top: 0;
@@ -476,16 +483,14 @@ main{
     border-radius: 8px;
     margin: 10px 0;
     outline-style: none;
-    font-size: 1rem;
+    font-size: 12px;
     cursor: pointer;
-    box-sizing: border-box;
  }
 
 
 
  /* card textarea fields */
  .card textarea {
-   
      padding: 8px 10px;
      outline: none;
      border-radius: 8px;
@@ -515,6 +520,7 @@ main{
      padding-bottom: 8px;
  }
  
+
 
 
 /* dashboard page styles end */
@@ -549,16 +555,19 @@ footer p{
         letter-spacing: 2px;
     }
 
-    .column {
+     .column {
         width: 100%;
         display: block;
         margin-bottom: 20px;
-    }
+    } 
 
     .dash_column {
         width: 95%;
-        display: block;
         margin: 20px;
+    }
+
+    .card input {
+        font-size: 18px;
     }
 }
 
@@ -610,6 +619,10 @@ footer p{
         width: 95%;
         display: block;
         margin: 20px;
+    }
+
+    .card input {
+        font-size: 14px;
     }
 
 }

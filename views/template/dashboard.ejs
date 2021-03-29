@@ -8,14 +8,13 @@
       <%- include('./nav') %>
         <!-- page content -->
         <div class="dashboard-container">
-
           <div>
             <div class="dash_column">
               <div class="card">
                 <h1>Build Lifeform</h1>
                 <div>
                   <button id='randomName'>Randomize Name</button>
-                  <input type="text" id="lifeformName" name="lifeformName" value="Dufrugia" cols="100" readonly>
+                  <input type="text" id="lifeformName" class="scroll" name="lifeformName" value="Dufrugia" readonly>
                 </div>
                 <div>
                   <button id='randomDisposition'>Randomize Disposition</button>
@@ -35,7 +34,7 @@
                 </div>
                 <div>
                   <button id='randomUpper'>Randomize Upper Appendage</button>
-                  <input type="text" id="lifeformUpper" name="lifeformUpper" value="two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger" readonly>
+                  <input type="text" id="lifeformUpper" class="scroll" name="lifeformUpper" value="two Humanoid arms and humanoid hands. Each with an opposable thumb and a single finger"readonly>
                 </div>
                 <div>
                   <button id='randomHead'>Randomize Head</button>
@@ -80,6 +79,7 @@
                   <button id='generateLifeform'>Generate Completely New Lifeform</button>
                   <br>
                 </div>
+              </form>
               </div>
             </div>
             <div class="dash_column">
@@ -103,7 +103,6 @@
                   </textarea>
                   <br>
                     <button id="saveLifeform">Save Lifeform</button>
-                </form>
               </div>
             </div>
           </div>
