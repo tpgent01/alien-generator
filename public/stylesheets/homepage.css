@@ -80,14 +80,125 @@ nav{
  }
 main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+/* HOMEPAGE CARD */
+main .card-figure{
+    width: 450px;
+    height: 430px;
+    background-image: linear-gradient(to right top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    margin: .6rem;
+    color:  var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-  /* dashboard page styles  */
+main .card-figure .top-panel,
+main .card-figure .bottom-panel {
+    width: 100%;
+    height: 50%;
+    padding: 0 15px;
+}
+main .card-figure .top-panel h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+main .card-figure .top-panel .info{
+    line-height: 1.8;
+    font-size: 1rem;
+}
+main .card-figure .top-panel .backstory{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main .card-figure .top-panel .info span{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+main .card-figure .bottom-panel{
+    background-color: transparent;
+    border-radius: 15px;
+    padding-top: 10px;
+    margin-top: 1rem;
+}
+main .card-figure .bottom-panel span{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--white);
+
+}
+main .card-figure .bottom-panel .abilities{
+    margin-top: 1rem;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #fff;
+}
+main .card-figure .bottom-panel .abilities .ability{
+    width: 33.33%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #333;
+    text-transform: capitalize;
+}
+main .card-figure .bottom-panel .abilities .ability:nth-child(2){
+    border-left: 2px solid rgb(226, 226, 226);
+    border-right: 2px solid  rgb(226, 226, 226);
+}
+
+main .cta{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+main .cta a{
+   padding: 15px 1.3rem;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: background-color .2s ease-in-out;
+}
+main .cta a:hover{
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: 700;
+}
+/* END OF HOMEPAGE CARD */
+.dashboard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
   .dashboard-container {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/images/lifeform_background.jpg');
