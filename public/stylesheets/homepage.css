@@ -88,8 +88,8 @@ main{
 }
 /* HOMEPAGE CARD */
 main .card-figure{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 430px;
     background-image: linear-gradient(to right top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
     padding: 10px;
     border-radius: 10px;
@@ -102,6 +102,7 @@ main .card-figure{
     flex-direction: column;
     justify-content: space-between;
 }
+
 main .card-figure .top-panel,
 main .card-figure .bottom-panel {
     width: 100%;
@@ -109,15 +110,22 @@ main .card-figure .bottom-panel {
     padding: 0 15px;
 }
 main .card-figure .top-panel h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 2px;
 }
 main .card-figure .top-panel .info{
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 1rem;
 }
+main .card-figure .top-panel .backstory{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 main .card-figure .top-panel .info span{
     font-weight: 700;
     text-transform: capitalize;
@@ -160,6 +168,29 @@ main .card-figure .bottom-panel .abilities .ability:nth-child(2){
     border-right: 2px solid  rgb(226, 226, 226);
 }
 
+main .cta{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+main .cta a{
+   padding: 15px 1.3rem;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: background-color .2s ease-in-out;
+}
+main .cta a:hover{
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: 700;
+}
 /* END OF HOMEPAGE CARD */
 .dashboard {
     width: 100%;
