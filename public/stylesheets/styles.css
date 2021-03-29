@@ -73,6 +73,10 @@ h1, .info, span{
     box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
     -webkit-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 5px 11px -4px rgba(0,0,0,0.75);
+    line-height: 1.4;
+}
+.wrapper .card .mini-box .bottom-panel{
+    padding-top: 1rem;
 }
 .wrapper .card .content{
     position: relative;
@@ -94,6 +98,12 @@ h1{
 .wrapper .card .mini-box .inner-mini{
    display: flex;
    flex-direction: column;
+}
+.wrapper .card .mini-box .inner-mini .backstory{
+   width: 100%; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .wrapper .card .mini-box .inner-mini .info{
     text-align: left;
