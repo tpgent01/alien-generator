@@ -10,6 +10,7 @@
     <title>Card</title>
 </head>
 
+
 <body>
     <%- include('./nav') %>
         <div class="wrapper">
@@ -39,6 +40,7 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
                 </div>
                 <div class="content">
                     <p class="info"><span>UpperAppendageType:</span>
@@ -80,6 +82,49 @@
         <script src="/javascript/homepage.js"></script>
         <script src="../../controllers/api/alien-routes.js"></script>
         <script src="/javascript/upvote.js"></script>
+=======
+            </div>
+            <div class="content">
+                <p class="info"><span>UpperAppendageType:</span>
+                    <%= alien.lifeform.upperAppendageType %>
+                </p>
+                <p class="info"><span>head:</span>
+                    <%=alien.lifeform.head %>
+                </p>
+                <p class="info"><span>facial Features:</span>
+                    <%=alien.facialFeatures %>
+                </p>
+                <p class="info"><span>mouth:</span><%=alien.lifeform.mouth %></p>
+                <p class="info"><span>eyes:</span> <%=alien.lifeform.eyes %></p>
+                <p class="info"><span>nose:</span> <%=alien.lifeform.nose %></p>
+                <p class="info"><span>ears:</span><%=alien.lifeform.ears %> </p>
+                <p class="info"><span>skin:</span> <%=alien.lifeform.skin %></p>
+                <p class="info"><span>otherFeatures:</span> <%=alien.lifeform.otherFeatures %> </p>
+                <p class="info"><span>Physical description:</span> <%=alien.lifeform.physicalDescription %> </p>
+                <a href="#" class="comment">Leave a comment</a>
+                <a href="#" class="upvote-btn upvote">Upvote</a>
+                <form class="comment-form">
+                    <div>
+                      <textarea name="comment-body"></textarea>
+                    </div>
+                  
+                    <div>
+                      <button type="submit">add comment</button>
+                    </div>
+                </form>
+                <%=alien.comments %>
+            </div>
+            
+
+        </div>
+        
+        
+
+    </div>
+    <script src="/javascript/homepage.js"></script>
+    <script src="/javascript/upvote.js"></script>
+    <script src="/javascript/comment.js"></script>
+>>>>>>> develop
 </body>
 
 </html>
