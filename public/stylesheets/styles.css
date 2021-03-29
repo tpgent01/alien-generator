@@ -91,7 +91,7 @@ h1, .info, span{
     overflow-y: scroll;
 }
 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -151,7 +151,7 @@ p{
     transition: opacity .3s ease;
 }
 
-.wrapper .upvote {
+.wrapper .upvote-btn {
     background-color: var(--purple);
     color: var(--white);
     padding: 12px 2rem;
