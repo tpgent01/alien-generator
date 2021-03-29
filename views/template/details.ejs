@@ -6,34 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/nav-styles.css">
     <title>Card</title>
 </head>
 
 <body>
-
+    <%- include('./nav') %>
     <div class="wrapper">
         <div class="card">
             <div class="mini-box">
                 <div class="inner-mini">
-                    <h1> <%= alien.lifeform.name %> </h1>
-                    <p class="info"><span>Backstory:</span> <%= alien.lifeform.backstory %></p>
-                    <p class="info"><span>Locamotion:</span><%= alien.lifeform.locomotion %></p>
+                    <h1>
+                        <%= alien.lifeform.name %>
+                    </h1>
+                    <p class="info backstory"><span>Backstory:</span>
+                        <%= alien.lifeform.backstory %>
+                    </p>
+                    <p class="info"><span>Locamotion:</span>
+                        <%= alien.lifeform.locomotion %>
+                    </p>
                 </div>
 
-                <span>Abilities</span>
-                <div class="abilities">
-                    <% alien.lifeform.abilities.forEach(ability=>{%>
-                        <div class="ability">
-                            <%= ability.name %>
-                        </div>
-    
-                        <%}) %>
+                <div class="bottom-panel">
+                    <span>Abilities</span>
+                    <div class="abilities">
+                        <% alien.lifeform.abilities.forEach(ability=>{%>
+                            <div class="ability">
+                                <%= ability.name %>
+                            </div>
+
+                            <%}) %>
+                    </div>
                 </div>
+
             </div>
             <div class="content">
-                <p class="info"><span>UpperAppendageType:</span> <%= alien.lifeform.UpperAppendageType %></p>
-                <p class="info"><span>head:</span> <%=alien.lifeform.head %> </p>
-                <p class="info"><span>facial Features:</span> <%=alien.facialFeatures %></p>
+                <p class="info"><span>UpperAppendageType:</span>
+                    <%= alien.lifeform.UpperAppendageType %>
+                </p>
+                <p class="info"><span>head:</span>
+                    <%=alien.lifeform.head %>
+                </p>
+                <p class="info"><span>facial Features:</span>
+                    <%=alien.facialFeatures %>
+                </p>
                 <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
                 <p class="info"><span>eyes:</span> Marbled</p>
                 <p class="info"><span>nose:</span> Proboscis</p>
@@ -48,7 +64,7 @@
                     quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very Bad
                     Rash.</p>
                 <a href="#" class="comment">Leave a comment</a>
-
+                    <a href="#" class="upvote-btn">Upvote</a>
             </div>
 
 
@@ -58,6 +74,7 @@
     </div>
     <script src="/javascript/homepage.js"></script>
     <script src="../../controllers/api/alien-routes.js"></script>
+    <script src="/javascript/upvote.js"></script>
 </body>
 
 </html>

@@ -39,7 +39,8 @@ THEN I am presented with the homepage, which
 
 ## 🎨Mock-Up
 <br>**The following animation demonstrates the application functionality:**</br>
-<br>![](assets/mock-up.gif)</br>
+<br>![](public/assets/mockup1.gif)</br>
+<br>![](public/assets/mockup2.gif)</br>
 
 
 ## 🔌Installation
@@ -78,14 +79,14 @@ Licensed under the MIT license.
 
 ## 🏆Badges
 
-![GitHub top language](https://img.shields.io/github/languages/top/tpgent01/e-commerce-back-end?color=red&style=plastic)
-<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/e-commerce-back-end?color=orange&style=plastic)</br>
-![GitHub language count](https://img.shields.io/github/languages/count/tpgent01/e-commerce-back-end?color=yellow&style=plastic)
-<br>![GitHub closed issues](https://img.shields.io/github/issues-closed/tpgent01/e-commerce-back-end?color=brightgreen&style=plastic)</br>
-![GitHub last commit](https://img.shields.io/github/last-commit/tpgent01/e-commerce-back-end?color=blueviolet&style=plastic)
-<br>![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tpgent01/e-commerce-back-end?color=ff69b4&style=plastic)</br>
-![GitHub watchers](https://img.shields.io/github/watchers/tpgent01/e-commerce-back-end?style=social)
-<br>![GitHub Repo stars](https://img.shields.io/github/stars/tpgent01/e-commerce-back-end?style=social)</br>
+![GitHub top language](https://img.shields.io/github/languages/top/tpgent01/alien-generator?color=red&style=plastic)
+<br>![GitHub repo size](https://img.shields.io/github/repo-size/tpgent01/alien-generator?color=orange&style=plastic)</br>
+![GitHub language count](https://img.shields.io/github/languages/count/tpgent01/alien-generator?color=yellow&style=plastic)
+<br>![GitHub closed issues](https://img.shields.io/github/issues-closed/tpgent01/alien-generator?color=brightgreen&style=plastic)</br>
+![GitHub last commit](https://img.shields.io/github/last-commit/tpgent01/alien-generator?color=blueviolet&style=plastic)
+<br>![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tpgent01/alien-generator?color=ff69b4&style=plastic)</br>
+![GitHub watchers](https://img.shields.io/github/watchers/tpgent01/alien-generator?style=social)
+<br>![GitHub Repo stars](https://img.shields.io/github/stars/tpgent01/alien-generator?style=social)</br>
 
 
 
@@ -98,9 +99,8 @@ To test this project, please see the [Installation](#installation) section.
 ## ❓Questions
 
 If you have any questions about this projects, please contact me directly at tpgent01@outlook.com. 
-<br>You can view more of my projects at https://github.com/tpgent01 👾</br>
 
 
 ## 📌Contributing
 
-Group 6 ©2021 All Rights Reserved.
+[Aaliyah Symlar](https://github.com/asymlar), [Dustin Micklos](https://github.com/Dustymick), [Ebenezer Kankam](https://github.com/kwabena95), [J Scott Rumptz](https://github.com/jscottrumptz), & [Taylor Gentry](https://github.com/tpgent01) ©2021 All Rights Reserved.
