@@ -1,14 +1,14 @@
-async function upvoteClickHandler(event) {
+async function voteClickHandler(event) {
     event.preventDefault();
 
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
 
-    const response = await fetch('/api/alien/:id', {
+    const response = await fetch('/api/alien/upvote', {
         method: 'PUT',
         body: JSON.stringify({
-            post_id: id
+            alien_id: id
         }),
         headers: {
             'Content-Type': 'application/json'
@@ -22,4 +22,4 @@ async function upvoteClickHandler(event) {
     }
 }
 
-document.querySelector('.upvote').addEventListener('click', upvoteClickHandler);
+document.querySelector('.upvote').addEventListener('click', voteClickHandler);
