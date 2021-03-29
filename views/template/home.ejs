@@ -26,10 +26,12 @@
             </div>
         </div>
         <div class="cta">
-            <a href="/single-alien">See details</a>
+            <a href='/api/aliens/<%= aliens.id %> '>See details</a>
             <div>
                 <i class="far fa-heart"></i>
-                <span class="vote">2</span>
+                <span class="vote">
+                    <%= alien.vote_count %>
+                </span>
             </div>
 
         </div>
