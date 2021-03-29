@@ -10,6 +10,7 @@
     <title>Card</title>
 </head>
 
+
 <body>
     <%- include('./nav') %>
     <div class="wrapper">
@@ -42,7 +43,7 @@
             </div>
             <div class="content">
                 <p class="info"><span>UpperAppendageType:</span>
-                    <%= alien.lifeform.UpperAppendageType %>
+                    <%= alien.lifeform.upperAppendageType %>
                 </p>
                 <p class="info"><span>head:</span>
                     <%=alien.lifeform.head %>
@@ -50,19 +51,13 @@
                 <p class="info"><span>facial Features:</span>
                     <%=alien.facialFeatures %>
                 </p>
-                <p class="info"><span>mouth:</span> Multiple Rows of Long Teeth</p>
-                <p class="info"><span>eyes:</span> Marbled</p>
-                <p class="info"><span>nose:</span> Proboscis</p>
-                <p class="info"><span>ears:</span> Cat-like</p>
-                <p class="info"><span>skin:</span> a quarter Foliage Mint and three-quarters Shimmering Apricot</p>
-                <p class="info"><span>otherFeatures:</span> A very Bad Rash</p>
-                <p class="info"><span>Physical description:</span> Charlie is a Average sized Flapper (Avian Locamotion)
-                    that manipulates it's immediate enviornment using it's 4 Long Multijointed (Insectoid/Arachnid-like)
-                    Upper Limbs. Each one with a suprisingly dexterous pincher at its end. Charlie's Large Humanoid Head
-                    with its Enlarged Cranium features a Large Wattle. Despite this, you can't help but notice it's
-                    Marbled eyes, Proboscis, Cat-like ears, and Multiple Rows of Long Teeth! Charlie's epidermis is a
-                    quarter Foliage Mint and three-quarters Shimmering Apricot, but most notably it features A very Bad
-                    Rash.</p>
+                <p class="info"><span>mouth:</span><%=alien.lifeform.mouth %></p>
+                <p class="info"><span>eyes:</span> <%=alien.lifeform.eyes %></p>
+                <p class="info"><span>nose:</span> <%=alien.lifeform.nose %></p>
+                <p class="info"><span>ears:</span><%=alien.lifeform.ears %> </p>
+                <p class="info"><span>skin:</span> <%=alien.lifeform.skin %></p>
+                <p class="info"><span>otherFeatures:</span> <%=alien.lifeform.otherFeatures %> </p>
+                <p class="info"><span>Physical description:</span> <%=alien.lifeform.physicalDescription %> </p>
                 <a href="#" class="comment">Leave a comment</a>
                 <a href="#" class="upvote-btn upvote">Upvote</a>
                 <form class="comment-form">
