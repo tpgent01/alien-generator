@@ -1,15 +1,32 @@
-<div class="card-figure">
-    <div class="top-panel">
-        <h1>Charlie</h1>
-        <p class="info"><span>backstory:</span> A sad tale about a happy alien</p>
-        <p class="info"><span>locamotion:</span> Average sized Flapper (Avian Locamotion)</p>
-    </div>
-    <div class="bottom-panel">
-        <span>abilities</span>
-        <div class="abilities">
-            <div class="ability">venom</div>
-            <div class="ability">Elasticity II</div>
-            <div class="ability">Accelerated Evolution</div>
+<% aliens.forEach(alien=>{%>
+    <div class="card-figure">
+        <div class="top-panel">
+            <h1>
+                <%= alien.name %>
+            </h1>
+            <p class="info"><span>backstory:</span>
+                <%= alien.backstory %>
+            </p>
+            <p class="info"><span>locamotion:</span>
+                <%= alien.locomotion %>
+            </p>
+        </div>
+        <div class="bottom-panel">
+            <span>abilities</span>
+            <div class="abilities">
+                <% for(let i=0; i< alien.length; i++){%>
+                    <div class="ability">
+                        <%= alien.abilities[i].name %>
+                    </div>
+                    <div class="ability">
+                        <%= alien.abilities[i].name %>
+                    </div>
+                    <div class="ability">
+                        <%= alien.abilities[i].name %>
+                    </div>
+                    <%} %>
+
+            </div>
         </div>
     </div>
-</div>
+    <%}) %>

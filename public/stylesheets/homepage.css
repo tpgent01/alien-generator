@@ -192,8 +192,6 @@ main .card-figure .bottom-panel .abilities .ability:nth-child(2){
     background-color: var(--grey);
 }
 
-<<<<<<< HEAD
-=======
 .dash_column {
     float: left;
     width: 50%;
@@ -230,7 +228,6 @@ main .card-figure .bottom-panel .abilities .ability:nth-child(2){
     font-size: 15px;
 } */
 
->>>>>>> develop
 footer{
     background-color: var(--dark-blue);
     display: flex;
