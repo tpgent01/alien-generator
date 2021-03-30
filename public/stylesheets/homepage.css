@@ -59,8 +59,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .nav-links .link{
     margin: 1rem 2.6rem;
     color: var(--white);
@@ -68,6 +68,7 @@ nav{
     letter-spacing: 2px;
     transition:  transform .3s ease;
 }
+
 .nav-links .link:hover{
    color: #ffb703;
    transform: scale(1.2);
