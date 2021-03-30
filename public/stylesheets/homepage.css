@@ -32,9 +32,8 @@ nav .menu-icon{
     width: 100%;
     min-height: 100vh;
     background: url('../assets/images/tech_bg.jpg');
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
     overflow-x: hidden;
 }
 nav{
@@ -204,10 +203,7 @@ main .cta a:hover{
 }
 
   .dashboard-container {
-    background: url('../assets/images/tech_bg.jpg');
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+    width: 100%;
   }
 
 .row {
