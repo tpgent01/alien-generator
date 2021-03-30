@@ -76,11 +76,13 @@ nav{
    transform: scale(1.2);
    font-weight: 700;
 }
+
 .nav-links .logout:hover{
     color: #d00000;
     transform: scale(1.2);
     font-weight: 700;
- }
+}
+
 main{
     width: 100%;
     min-height: 100vh;
@@ -245,14 +247,14 @@ main .cta a:hover{
 .card button {
     font-size: 15px;
     border-radius:8px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: none;
     font-weight: 500;
     background-color: var(--dark-blue);
     color: var(--white);
     cursor: pointer;
     text-align: center;
-    margin: 2px 2px;
+    margin-right: 10px;
     vertical-align: bottom;
     outline: none;
 }
@@ -262,10 +264,21 @@ main .cta a:hover{
 }
 
 .dash_column {
-  float: left;
+    float: left;
     width: 50%;
     padding: 5px 10px;
     padding-top: 10px;
+}
+
+.randomizer_content {
+    display:grid;
+}
+
+.randomizer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px
 }
 
  .card, h3 {
@@ -277,7 +290,7 @@ main .cta a:hover{
 
  /* card input fields */
  .card input {
-    width: 100%;
+    width: 70%;
     display: inline-block;
     height: 40px;
     padding: 5px 20px;
@@ -374,6 +387,8 @@ footer p{
     .card input {
         font-size: 18px;
     }
+
+
 }
 
 @media screen and (max-width: 892px){
@@ -430,6 +445,9 @@ footer p{
         font-size: 14px;
     }
 
+    .randomizer {
+        padding-right: 20px
+    }
 }
 
 @media screen and (max-width: 599px){
