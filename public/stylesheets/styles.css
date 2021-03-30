@@ -17,6 +17,9 @@
 body{
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
+    background: url('../assets/images/tech_bg.jpg');
+    background-position: top;
+    background-size: 100%;
 }
 span{
     text-transform: capitalize;
