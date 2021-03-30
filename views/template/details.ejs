@@ -73,38 +73,35 @@
                         <%=alien.lifeform.physicalDescription %>
                     </p>
 
-                    <form class="comment-form">
-                        <div class="textarea">
-                            <textarea name="comment-body" placeholder="Leave a comment"></textarea>
-                        </div>
-
-                        <div class="comment-btn">
-                            <button type="submit">add comment</button>
-                            <a href="#" class="upvote-btn upvote">Upvote</a>
-                        </div>
-                    </form>
-
-
-                    <div class="recent-comments">
-                        <h4 class="recent-comment-tile">Recent Comments</h4>
-
-                        <% for(let i=0; i < alien.comments.length; i++){%>
-                            <p class="recent-comment-body">
-                                -- <%= alien.comments[i].comment_text%>
-
-                            </p>
-                            <span class="date">
-                                <%= alien.comments[i].created_at %>
-                            </span>
-                            <% } %>
-
-
-                    </div>
                 </div>
+
+            </div>
+            <form class="comment-form">
+                <div class="textarea">
+                    <textarea name="comment-body" placeholder="Leave a comment"></textarea>
+                </div>
+
+                <div class="comment-btn">
+                    <button type="submit">add comment</button>
+                    <a href="#" class="upvote-btn upvote">Upvote</a>
+                </div>
+            </form>
+
+            <div class="recent-comments">
+                <h4 class="recent-comment-tile">Recent Comments</h4>
+
+                <% for(let i=0; i < alien.comments.length; i++){%>
+                    <p class="recent-comment-body">
+                        -- <%= alien.comments[i].comment_text%>
+
+                    </p>
+                    <span class="date">
+                        <%= alien.comments[i].created_at %>
+                    </span>
+                    <% } %>
 
 
             </div>
-
 
 
         </div>

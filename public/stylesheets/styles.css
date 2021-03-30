@@ -89,7 +89,7 @@ h1, .info, span{
     visibility: visible;
     opacity: 1;
     overflow-y: scroll;
-    line-height: 2;
+    line-height: 1.8;
 }
 h1{
     font-size: 4rem;
@@ -101,7 +101,7 @@ h1{
    flex-direction: column;
 }
 .wrapper .card .mini-box .inner-mini .backstory{
-   width: 100%; 
+    width: 100%; 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -155,7 +155,7 @@ p{
 .wrapper .upvote-btn {
     background-color: var(--purple);
     color: var(--white);
-    padding: 6px 2rem;
+    padding: 13px 3.4rem;
     text-decoration: none;
     border-radius: 10px;
     font-weight: 700;
@@ -167,13 +167,14 @@ p{
 }
 
 /* COMMENT FORM */
-.wrapper .card .content .comment-form{
+.wrapper  .comment-form{
     margin-top: 1rem;
+    transform: translate(30%);
     width: 100%;
     height: 250px;
 }
-.wrapper .card .content .comment-form textarea{
-    width: 100%;
+.wrapper  .comment-form textarea{
+    width: 40%;
     height: 200px;
     margin-bottom: 10px;
     color: #000;
@@ -183,12 +184,12 @@ p{
     outline: none;
     border-radius: 15px;
 }
-.wrapper .card .content .comment-form .comment-btn{
+.wrapper .comment-form .comment-btn{
     width: 100%;
     height: 70px;
     padding: 15px 0;
 }
-.wrapper .card .content .comment-form .comment-btn button{
+.wrapper  .comment-form .comment-btn button{
     background-color: var(--purple);
     color: var(--white);
     padding: 15px 2rem;
@@ -204,25 +205,26 @@ p{
     cursor: pointer;
 }
 .wrapper .upvote-btn:hover, 
-.wrapper .card .content .comment-form .comment-btn button:hover{
+.wrapper  .comment-form .comment-btn button:hover{
     opacity: .8;
 }
 /* END OF COMMENT FORM */
 
 
 /* DISPLAY RECENT COMMENTS */
-.wrapper .card .content .recent-comments{
-    width: 100%;
+.wrapper .recent-comments{
+    width: 40%;
     background-color: rgba(212, 212, 212, 0.623);
     height: auto;
     margin-top: 3.5rem;
     padding: 0 10px;
     border-radius: 15px;
+    line-height: 1.5;
 }
-.wrapper .card .content .recent-comments .recent-comments-body{
+.wrapper .recent-comments .recent-comments-body{
     margin-top: 1rem;
 }
-.wrapper .card .content .recent-comments .date{
+.wrapper .recent-comments .date{
     color: #000;
     font-weight: 400;
 }
@@ -256,6 +258,7 @@ p{
     .wrapper .card .mini-box{
         top: -6rem;
         left: 5rem;
+        z-index: 9999;
     }
     .wrapper .card .content{
         width: 100%; 
@@ -264,7 +267,21 @@ p{
         left: 0;
     }
     .wrapper .card:hover .content{
-        left: 4rem;
+        left: 3.6rem;
+     
     }
    
+    .wrapper .recent-comments{
+        width: 100%;
+    }
+    .wrapper  .comment-form{
+        width: 100%;
+        transform: translate(0);
+    }
+    .wrapper  .comment-form textarea{
+        width: 100%;
+    }
+    
+   
 }
+
