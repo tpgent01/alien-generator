@@ -231,19 +231,6 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
     .wrapper .card{
@@ -258,6 +245,9 @@ p{
     .wrapper .card .mini-box{
         top: -6rem;
         left: 5rem;
+        z-index: 9999;
+    }
+    .wrapper .card .mini-box{
         z-index: 9999;
     }
     .wrapper .card .content{
