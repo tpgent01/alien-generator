@@ -237,13 +237,13 @@ main .cta a:hover{
 
 .fortnite-btn {
     background: linear-gradient(#ffb703, #fce770);
-  font-family: 'Audiowide';
-  transform: skew(-5deg);
+    font-family: 'Audiowide';
+  /* transform: skew(-5deg); */
 }
 
 .fortnite-btn-inner {
-    /* background: linear-gradient(#ffb703, #fad818); */
-  /* transform: skew(-5deg); */
+    /* background: linear-gradient(#ffb703, #fad818);
+    transform: skew(-5deg); */
   color: #343F65;
 }
 
