@@ -66,6 +66,7 @@ nav{
         height: 100vh;
         transform: translateX(200%);
         transition: transform .3s ease-in-out;
+        z-index: 9999;
     }
     .nav-links .link{
         margin: 3rem;
