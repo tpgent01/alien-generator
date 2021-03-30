@@ -32,6 +32,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.card :hover{
+    border: hotpink;
+    border-style: solid;
+    border-radius: 5px;
+}
+
 .form-card{
     width: 450px;
     height: 500px;
