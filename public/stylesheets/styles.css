@@ -31,7 +31,6 @@ h1, .info, span{
 }
 .wrapper{
     width: 100%;
-    height: 100vh;
     position: relative;
     padding: 20px;
     display: flex;
@@ -43,7 +42,9 @@ h1, .info, span{
     width: 500px;
     height: 600px;
     border-radius: 20px;
-    background-color: #fff;
+    background: url('../assets/images/tech_bg_light.jpg');
+    background-position: top;
+    background-size:cover;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -221,7 +222,7 @@ p{
 /* DISPLAY RECENT COMMENTS */
 .wrapper .recent-comments{
     width: 40%;
-    background-color: rgba(212, 212, 212, 0.623);
+    background-color: rgba(189, 204, 255, 0.76);
     height: auto;
     margin-top: 3.5rem;
     padding: 0 10px;
@@ -234,6 +235,7 @@ p{
 .wrapper .recent-comments .date{
     color: #000;
     font-weight: 400;
+    text-transform: none;
 }
 
 
@@ -244,10 +246,12 @@ p{
         height: 350px;
         transition: height .3s ease;
         margin-bottom: 5.5rem;
+        top: 3rem;
     }
+    
     .wrapper .card:hover{
         width: 500px;
-        height: 1190px;
+        height: 1290px;
     }
     .wrapper .card .mini-box{
         top: -6rem;

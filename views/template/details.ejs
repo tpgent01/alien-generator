@@ -13,6 +13,7 @@
 
 <body>
     <%- include('./nav') %>
+    <div>
         <div class="wrapper">
             <div class="card">
                 <div class="mini-box">
@@ -42,37 +43,20 @@
 
                 </div>
                 <div class="content">
-                    <p class="info"><span>UpperAppendageType:</span>
-                        <%= alien.lifeform.upperAppendageType %>
+                    <p class="info"><span>Backstory:</span>
+                        <%= alien.lifeform.backstory %>
                     </p>
-                    <p class="info"><span>head:</span>
-                        <%=alien.lifeform.head %>
-                    </p>
-                    <p class="info"><span>facial Features:</span>
-                        <%=alien.facialFeatures %>
-                    </p>
-                    <p class="info"><span>mouth:</span>
-                        <%=alien.lifeform.mouth %>
-                    </p>
-                    <p class="info"><span>eyes:</span>
-                        <%=alien.lifeform.eyes %>
-                    </p>
-                    <p class="info"><span>nose:</span>
-                        <%=alien.lifeform.nose %>
-                    </p>
-                    <p class="info"><span>ears:</span>
-                        <%=alien.lifeform.ears %>
-                    </p>
-                    <p class="info"><span>skin:</span>
-                        <%=alien.lifeform.skin %>
-                    </p>
-                    <p class="info"><span>otherFeatures:</span>
-                        <%=alien.lifeform.otherFeatures %>
-                    </p>
+                    <br>
                     <p class="info"><span>Physical description:</span>
                         <%=alien.lifeform.physicalDescription %>
                     </p>
-
+                    <br>
+                    <p class="info"><span>Ability Descriptions:</span></p>
+                    <% alien.lifeform.abilities.forEach(ability=>{%>
+                        <p class="info">
+                            <span><%= ability.name %></span> - <%= ability.description %>
+                        </p>
+                    <%}) %>
                 </div>
 
             </div>
@@ -92,13 +76,14 @@
                 <h4 class="recent-comment-tile">Recent Comments</h4>
 
                 <% for(let i=0; i < alien.comments.length; i++){%>
+                    <br>
                     <p class="recent-comment-body">
                         -- <%= alien.comments[i].comment_text%>
-
                     </p>
                     <span class="date">
-                        <%= alien.comments[i].created_at %>
+                        <%= alien.comments[i].user.username %> on <%= new Intl.DateTimeFormat('en-US', { weekday: 'long', year: 'numeric', day: '2-digit', month: 'long'}).format(alien.comments[i].created_at) %>
                     </span>
+                    <br>
                     <% } %>
 
 
@@ -106,6 +91,8 @@
 
 
         </div>
+    </div>
+        <%- include('./footer') %>
         <% if(loggedIn) { %>
             <script src="/javascript/homepage.js"></script>
             <script src="/javascript/upvote.js"></script>
@@ -113,7 +100,7 @@
             <script src="/javascript/delete-alien.js"></script>
             <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
             <%}%>
-
+        
 </body>
 
 </html>
