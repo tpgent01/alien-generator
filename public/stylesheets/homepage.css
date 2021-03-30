@@ -234,14 +234,18 @@ main .cta a:hover{
 } 
 
 .fortnite-btn {
-    background: linear-gradient(#ffb703, #fefca3);
+    background: linear-gradient(#f8b91b, #fce770);
   font-family: 'Audiowide';
 }
 
 .fortnite-btn-inner {
-    background: linear-gradient(#ffb703, #fefb72);
+    background: linear-gradient(#ffb703, #fad818);
   transform: skew(-5deg);
   color: #343F65;
+}
+
+.fortnite-btn-inner:hover {
+    color: white;
 }
 
 .card button {
