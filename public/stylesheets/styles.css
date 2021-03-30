@@ -161,6 +161,7 @@ p{
     font-weight: 700;
     display: inline-block;
     transition: opacity .3s ease;
+    margin-right: 1rem;
 }
 .wrapper .card .content .comment:hover{
     opacity: .8;
@@ -185,9 +186,12 @@ p{
     border-radius: 15px;
 }
 .wrapper .comment-form .comment-btn{
-    width: 100%;
+    width: 40%;
     height: 70px;
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper  .comment-form .comment-btn button{
     background-color: var(--purple);
@@ -271,7 +275,27 @@ p{
     .wrapper  .comment-form textarea{
         width: 100%;
     }
-    
+    .wrapper .comment-form .comment-btn{
+        width: 100%;
+     
+    }
    
 }
+@media screen and (max-width: 555px) and (min-width: 500px){
+    button,.wrapper .upvote-btn{
+        font-size: 12px;
+    }
+    .wrapper .upvote-btn{
+        padding: 15px 3.4rem;
+    }
+}
+@media screen and (max-width: 500px){
+    /* button,.wrapper .upvote-btn{
+        font-size: 12px;
+    } */
+    .wrapper .upvote-btn{
+        padding: 20px 3.4rem;
+    }
+}
+
 
