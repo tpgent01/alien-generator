@@ -225,8 +225,10 @@ main .cta a:hover{
     overflow: hidden;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
+    background: linear-gradient(rgba(0, 0, 170, 0.64), rgba(20, 20, 190, 0.14)), url(../assets/images/tech_bg_light.jpg);
     background-position: top;
+    background-position-x: -1000px;
+    background-size: cover;
     box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     -webkit-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
@@ -314,20 +316,21 @@ main .cta a:hover{
 
  /* card textarea fields */
  .card textarea {
-     padding: 8px 10px;
+     padding: 20px;
      outline: none;
      border-radius: 8px;
      border: none;
-     margin: 8px  0;
+     margin: 20px;
      outline-style: none;
      font-size: 1rem;
      background-color: var(--dark-blue);
      color: var(--white);
      cursor: pointer;
      box-sizing: border-box;
-     padding-bottom: 5px;
-     width: 100%;
-     height: 50%;
+     width: 95%;
+     min-height: 50%;
+     height: fit-content;
+     resize: vertical;
      line-height: 1.5;
 
  }
@@ -343,6 +346,10 @@ main .cta a:hover{
  
  #name {
      padding-bottom: 8px;
+     font-size: xx-large;
+     font-weight: bold;
+     text-align: center;
+     width: 50%;
  }
 
 
@@ -365,6 +372,12 @@ footer p{
     color: var(--white);
     font-size: 14px;
 }
+
+.new_lifeform {
+    margin: 20px;
+    justify-self: right;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1097px){
