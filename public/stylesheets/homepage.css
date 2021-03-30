@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 :root{
     --dark-blue: #181E36;
@@ -230,6 +231,18 @@ main .cta a:hover{
     border-radius: 20px;
 } 
 
+.fortnite-btn {
+    background: linear-gradient(#ffb703, #fefca3);
+  font-family: 'Luckiest Guy';
+}
+
+.fortnite-btn-inner {
+    background: linear-gradient(#ffb703, #fefb72);
+  transform: skew(-5deg);
+  color: #343F65;
+}
+
+
 .card button {
     font-size: 15px;
     border-radius:8px;
@@ -247,7 +260,7 @@ main .cta a:hover{
 
 .card button:hover {
     color: #ffb703;
- }
+}
 
 .dash_column {
   float: left;
