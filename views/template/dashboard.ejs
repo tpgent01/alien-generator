@@ -9,8 +9,9 @@
           <div>
             <div class="dash_column">
               <div class="card">
-                <h1>Build Lifeform</h1>
-                <div class="randomizer_content">
+              <button class="new_lifeform" id='generateLifeform'>Generate a completely new lifeform</button>
+              <div class="randomizer_content">
+
                   <div class="randomizer">
                     <button id='randomName'>Randomize<br>Name</button>
                     <input type="text" id="lifeformName" class="scroll" name="lifeformName" readonly>
@@ -88,33 +89,25 @@
                   <textarea id="lifeformAbilities" rows="10" cols="80" class="scroll" readonly>
                   </textarea>
                 </div>
-                
-                <div>
-                  <button id='generateLifeform'>Generate Completely New Lifeform</button>
-                  <br>
-                </div>
               </form>
               </div>
             </div>
             <!-- New lifeform form-->
             <div class="dash_column">
               <div class="card">
-                <h1 class>New Lifeform</h1>
+                <button class="new_lifeform" id="saveLifeform">Save this lifeform</button>
                 <form>
-                  <h3>Name:</h3><br>
-                  <input type="text" id="name" name="name" readonly><br>
-                  <h3>Backstory:</h3><br>
+                  <h3>Name:</h3>
+                  <input class="char_name" type="text" id="name" name="name" readonly><br><br>
+                  <h3>Backstory:</h3>
                   <textarea id="backstory" rows="10" cols="80" class="scroll" readonly>
                   </textarea><br><br>
-                  Physical Description:<br>
+                  <h3>Physical Description:</h3>
                   <textarea id="physicalDescription" rows="10" cols="80" readonly>
-                  </textarea><br>
-                  <h3>Abilities:</h3><br>
+                  </textarea><br><br>
+                  <h3>Abilities:</h3>
                   <textarea id="abilities" rows=10 cols="80" class="scroll" readonly>
-                    
                   </textarea>
-                  <br>
-                  <button id="saveLifeform">Save Lifeform</button>
                 </form>
               </div>
             </div>
