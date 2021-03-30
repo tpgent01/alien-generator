@@ -222,7 +222,8 @@ main .cta a:hover{
     overflow: hidden;
     padding: 10px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.158);
+    background-image: linear-gradient(to top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
+    background-position: top;
     box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     -webkit-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
     -moz-box-shadow: 18px -5px 215px -38px rgba(0,0,0,0.75);
