@@ -132,11 +132,11 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #666;
+    text-transform: capitalize;
+    font-weight: bold;
 }
-.wrapper .card .mini-box .abilities .ability:nth-child(2){
-    border-left: 2px solid rgb(226, 226, 226);
-    border-right: 2px solid  rgb(226, 226, 226);
-}
+
 .wrapper .card .content .info{
     color: #000;
 }
