@@ -8,7 +8,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const session = require('express-session');
-// const { start } = require('repl');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
@@ -34,6 +33,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening on ${PORT}`));
 });
