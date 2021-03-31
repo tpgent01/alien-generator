@@ -105,4 +105,13 @@ router.get('/create-lifeform', (req, res) => {
   res.render('template/create-lifeform');
 });
 
+router.get('/about', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('template/about');
+});
+
 module.exports = router;
