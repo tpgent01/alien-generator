@@ -95,11 +95,13 @@ h1, .info, span{
     overflow-y: scroll;
     line-height: 1.8;
 }
-h1{
+
+.inner-mini h1{
     font-size: 4rem;
     font-weight: 700;
     text-transform: capitalize;
 }
+
 .wrapper .card .mini-box .inner-mini{
    display: flex;
    flex-direction: column;
