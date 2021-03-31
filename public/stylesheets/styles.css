@@ -207,6 +207,12 @@ p{
     font-weight: 700;
 }
 
+.wrapper  .comment-form .comment-btn .delete-alien-btn:hover{
+    background-color: red;
+    color: var(--white);
+    font-weight: 700;
+}
+
 /* END OF COMMENT FORM */
 
 
