@@ -40,7 +40,7 @@ h1, .info, span{
 }
 .wrapper .card{
     width: 500px;
-    height: 725px;
+    height: 1100px;
     border-radius: 20px;
     background: url('../assets/images/tech_bg_light.jpg');
     background-position: top;
@@ -59,16 +59,19 @@ h1, .info, span{
     width: 1000px;
 
 }
+
+
+
 .wrapper .card:hover ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 .wrapper .card .mini-box{
     position: absolute;
-    width: 350px;
+    width: 370px;
     height: 350px;
     top: 10rem;
-    left: -6rem;
+    left: -8rem;
     z-index: 20;
     background-image: linear-gradient(to right top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
     padding: 20px;
@@ -114,6 +117,10 @@ h1, .info, span{
 }
 .wrapper .card .mini-box .inner-mini .info{
     text-align: left;
+}
+
+.wrapper .card .mini-box .inner-mini .team {
+    text-align: center;
 }
 
 p{
@@ -162,86 +169,6 @@ p{
     opacity: .8;
 }
 
-/* COMMENT FORM */
-.wrapper  .comment-form{
-    margin-top: 1rem;
-    transform: translate(30%);
-    width: 100%;
-    height: 250px;
-}
-.wrapper  .comment-form textarea{
-    width: 40%;
-    height: 200px;
-    margin-bottom: 10px;
-    color: #000;
-    resize: none;
-    font-size: 1.4rem;
-    padding: 10px;
-    outline: none;
-    border-radius: 15px;
-}
-.wrapper .comment-form .comment-btn{
-    width: 40%;
-    height: 70px;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.wrapper  .comment-form .comment-btn button{
-    padding: 15px 1.3rem;
-    border: 2px solid var(--white);
-    color: var(--white);
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 10px;
-    transition: background-color .2s ease-in-out;
-    margin: 0px 5px;
-    outline: none;
-}
-
-.wrapper  .comment-form .comment-btn button:hover{
-    background-color: var(--purple);
-    color: var(--white);
-    font-weight: 700;
-}
-
-.wrapper  .comment-form .comment-btn .delete-alien-btn:hover{
-    background-color: red;
-    color: var(--white);
-    font-weight: 700;
-}
-
-/* END OF COMMENT FORM */
-
-
-/* DISPLAY RECENT COMMENTS */
-.wrapper .recent-comments{
-    width: 40%;
-    background-color: rgba(189, 204, 255, 0.76);
-    height: auto;
-    margin-top: 3.5rem;
-    padding:20px;
-    border-radius: 15px;
-    line-height: 1.5;
-    font-weight: bolder;
-}
-.wrapper .recent-comments .recent-comments-body{
-    margin-top: 1rem;
-    min-height: 50px;
-}
-.wrapper .recent-comments .recent-comment-tile{
-    color: var(--purple);
-}
-.wrapper .recent-comments .date{
-    color: #000;
-    font-weight: 400;
-    text-transform: none;
-}
-
-
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
     .wrapper .card{
@@ -253,7 +180,7 @@ p{
     
     .wrapper .card:hover{
         width: 500px;
-        height: 1290px;
+        height: 1800px;
     }
     .wrapper .card .mini-box{
         top: -6rem;
