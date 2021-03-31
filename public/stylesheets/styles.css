@@ -40,12 +40,12 @@ h1, .info, span{
 }
 .wrapper .card{
     width: 500px;
-    height: 650px;
+    height: 725px;
     border-radius: 20px;
     background: url('../assets/images/tech_bg_light.jpg');
     background-position: top;
     background-size:cover;
-    padding: 15px;
+    padding: 40px 15px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -67,7 +67,7 @@ h1, .info, span{
     position: absolute;
     width: 350px;
     height: 350px;
-    top: 8rem;
+    top: 10rem;
     left: -6rem;
     z-index: 20;
     background-image: linear-gradient(to right top, #181e36, #1c2440, #202a4b, #243056, #283661, #2a3c71, #2c4281, #2f4891, #344eaa, #3c54c4, #4959dc, #5a5df5);
