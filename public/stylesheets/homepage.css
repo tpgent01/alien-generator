@@ -208,7 +208,7 @@ main .cta a:hover{
 }
 
   .dashboard-container {
-    width: 100%;
+    width: 90%;
   }
 
 .row {
@@ -225,7 +225,6 @@ main .cta a:hover{
     text-align: center;
     justify-content: center;
     overflow: hidden;
-    padding: 10px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 170, 0.64), rgba(20, 20, 190, 0.14)), url(../assets/images/tech_bg_light.jpg);
     background-position: top;
@@ -332,7 +331,7 @@ main .cta a:hover{
      cursor: pointer;
      box-sizing: border-box;
      width: 95%;
-     min-height: 50%;
+     min-height: 60%;
      height: fit-content;
      resize: vertical;
      line-height: 1.5;
@@ -360,6 +359,13 @@ main .cta a:hover{
      height: 60px;
  }
 
+ #backstory {
+    height: 150px;
+ }
+
+ #physicalDescription {
+    height: 325px;
+ }
 
 /* dashboard page styles end */
 
@@ -477,9 +483,16 @@ footer p{
     .randomizer {
         padding-right: 20px
     }
+
+    .dashboard-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 599px){
+
+
+
     nav .name-container{
       width: 100%;
     }
