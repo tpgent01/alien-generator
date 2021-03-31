@@ -1,0 +1,125 @@
+<%- include('./head') %>
+  <body>
+    <!-- Dashboard Content -->
+    <div class="container">
+      <!-- Sidenav -->
+      <%- include('./nav') %>
+        <!-- page content -->
+        <div class="dashboard-container">
+          <div>
+            <div class="dash_column">
+              <div class="card">
+              <button class="new_lifeform" id='generateLifeform'>Generate a completely new lifeform</button>
+              <div class="randomizer_content">
+
+                  <div class="randomizer">
+                    <button id='randomName'>Randomize<br>Name</button>
+                    <input type="text" id="lifeformName" class="scroll" name="lifeformName" readonly>
+                  </div>
+                
+                  <div class="randomizer">
+                    <button id='randomDisposition'>Randomize<br>Disposition</button>
+                    <input type="text" id="lifeformDisposition" name="lifeformDisposition" readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomBirth'>Randomize<br>Birth</button>
+                    <input type="text" id="lifeformBirth" name="lifeformBirth" readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomReason'>Randomize<br>Reason</button>
+                    <input type="text" id="lifeformReason" name="lifeformReason" readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomLocomotion'>Randomize<br>Locomotion</button>
+                    <input type="text" id="lifeformLocomotion" name="lifeformLocomotion"readonly>   
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomUpper'>Randomize<br>Appendage</button>
+                    <input type="text" id="lifeformUpper" name="lifeformUpper" readonly> 
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomHead'>Randomize<br>Head</button>
+                    <input type="text" id="lifeformHead" name="lifeformHead"
+                      readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomFace'>Randomize<br>Face</button>
+                    <input type="text" id="lifeformFace" name="lifeformFace" readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomMouth'>Randomize<br>Mouth</button>
+                    <input type="text" id="lifeformMouth" name="lifeformMouth"  readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomEyes'>Randomize<br>Eye</button>
+                    <input type="text" id="lifeformEyes" name="lifeformEyes"readonly>
+                  </div>
+
+                  <div class="randomizer">
+                    <button id='randomNose'>Randomize<br>Nose</button>
+                    <input type="text" id="lifeformNose" name="lifeformNose"  readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomEars'>Randomize<br>Ears</button>
+                    <input type="text" id="lifeformEars" name="lifeformEars" readonly>
+                  </div>
+                  
+                  <div class="randomizer">
+                    <button id='randomSkin'>Randomize<br>Skin</button>
+                    <input type="text" id="lifeformSkin" name="lifeformSkin"
+                      readonly>
+                  </div>
+
+                  <div class="randomizer">
+                    <button id='randomOther'>Randomize<br>Features</button>
+                    <input type="text" id="lifeformOther" name="lifeformOther"readonly>
+                  </div>
+                </div>  
+                <div class="randomizer">
+                  <button id='randomAbilities'>Randomize<br>Abilities</button>
+                  <textarea id="lifeformAbilities" rows="10" cols="80" class="scroll" readonly>
+                  </textarea>
+                </div>
+              </form>
+              </div>
+            </div>
+            <!-- New lifeform form-->
+            <div class="dash_column">
+              <div class="card">
+                <button id="saveLifeform" class="fortnite-btn flex items-center justify-center h-32 w-64">
+                  <span class="fortnite-btn-inner p-3 pt-5 w-11/12 text-5xl truncate">Save Lifeform</span>
+                </button>
+                <form>
+                  <br>
+                  <h3>Name:</h3>
+                  <input class="char_name" type="text" id="name" name="name" readonly><br><br>
+                  <h3>Backstory:</h3>
+                  <textarea id="backstory" rows="10" cols="80" class="scroll" readonly>
+                  </textarea><br><br>
+                  <h3>Physical Description:</h3>
+                  <textarea id="physicalDescription" rows="10" cols="80" readonly>
+                  </textarea><br><br>
+                  <h3>Abilities:</h3>
+                  <textarea id="abilities" rows=10 cols="80" class="scroll" readonly>
+                  </textarea>
+                  <br>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%- include('./footer') %>
+        <script src="/javascript/homepage.js"></script>
+        <script src="/javascript/logout.js"></script>
+        <script src="/javascript/randomize.js"></script>
+        <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
+  </body>

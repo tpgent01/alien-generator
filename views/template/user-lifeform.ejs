@@ -1,0 +1,45 @@
+<% aliens.forEach(alien=>{%>
+    <div class="card-figure">
+        <div class="top-panel">
+            <h1>
+                <%= alien.lifeform.name %>
+            </h1>
+            <div class="info backstory"><span>backstory:</span>
+                <%= alien.lifeform.backstory %>
+            </div>
+            <p class="info"><span>locamotion:</span>
+                <%= alien.lifeform.locomotion %>
+            </p>
+        </div>
+        <div class="bottom-panel">
+            <span>Abilities</span>
+            <div class="abilities">
+
+                <% alien.lifeform.abilities.forEach(ability=>{%>
+                    <div class="ability">
+                        <%= ability.name %>
+                    </div>
+
+                    <%}) %>
+
+
+            </div>
+        </div>
+        <div class="cta">
+            <a href='/my-lifeforms/edit/<%= alien.id %>' >See Details</a>
+            <div>
+                <i class="far fa-comment-dots"></i>
+                <span class="vote">
+                    <%= alien.comments.length %>
+                </span>
+            </div>
+            <div>
+                <i class="far fa-heart"></i>
+                <span class="vote">
+                    <%= alien.vote_count %>
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <%}) %>

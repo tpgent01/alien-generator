@@ -96,4 +96,13 @@ router.get('/login', (req, res) => {
   res.render('template/login-signup');
 });
 
+router.get('/create-lifeform', (req, res) => {
+  if (!req.session.loggedIn) {
+    res.redirect('/');
+    return;
+  }
+
+  res.render('template/create-lifeform');
+});
+
 module.exports = router;

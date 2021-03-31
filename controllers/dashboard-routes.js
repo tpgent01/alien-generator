@@ -34,7 +34,7 @@ router.get('/', withAuth, (req, res) => {
   })
     .then(dbAlienData => {
       const aliens = dbAlienData.map(alien => alien.get({ plain: true }));
-      res.render('template/dashboard', { aliens, loggedIn: true });
+      res.render('template/my-lifeforms', { aliens, loggedIn: true });
     })
     .catch(err => {
       console.log(err);
@@ -69,7 +69,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
       if (dbAlienData) {
         const alien = dbAlienData.get({ plain: true });
 
-        res.render('edit-alien', {
+        res.render('template/edit-lifeform', {
           alien,
           loggedIn: true
         });
