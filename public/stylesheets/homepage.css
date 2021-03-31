@@ -237,22 +237,32 @@ main .cta a:hover{
     height: 1250px;
 } 
 
-.fortnite-btn {
+.lifeform-btn {
     background: linear-gradient(#ffb703, #fce770);
     font-family: 'Audiowide';
     margin-top: 20px;
   /* transform: skew(-5deg); */
 }
 
-.fortnite-btn-inner {
+.lifeform-btn-inner {
     background: linear-gradient(#ffb703, #fad818);
     border-radius:6px;
     transform: skew(-5deg);
-  color: #343F65;
+    color: #343F65;
 }
 
-.fortnite-btn-inner:hover {
+.lifeform-btn-inner:hover {
     color: white;
+}
+
+#generateLifeform {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+#saveLifeform {
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 .card button {
