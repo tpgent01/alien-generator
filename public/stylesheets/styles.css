@@ -158,17 +158,6 @@ p{
     transition: opacity .3s ease;
 }
 
-.wrapper .upvote-btn {
-    background-color: var(--purple);
-    color: var(--white);
-    padding: 13px 3.4rem;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 700;
-    display: inline-block;
-    transition: opacity .3s ease;
-    margin-right: 1rem;
-}
 .wrapper .card .content .comment:hover{
     opacity: .8;
 }
@@ -200,24 +189,24 @@ p{
     align-items: center;
 }
 .wrapper  .comment-form .comment-btn button{
+    padding: 15px 1.3rem;
+    border: 2px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: background-color .2s ease-in-out;
+    margin: 0px 5px;
+    outline: none;
+}
+
+.wrapper  .comment-form .comment-btn button:hover{
     background-color: var(--purple);
     color: var(--white);
-    padding: 15px 2rem;
-    text-decoration: none;
-    border-radius: 10px;
     font-weight: 700;
-    display: inline-block;
-    transition: opacity .3s ease;
-    border: none;
-    outline: none;
-    text-transform: capitalize;
-    margin-right: 1rem;
-    cursor: pointer;
 }
-.wrapper .upvote-btn:hover, 
-.wrapper  .comment-form .comment-btn button:hover{
-    opacity: .8;
-}
+
 /* END OF COMMENT FORM */
 
 
@@ -227,12 +216,17 @@ p{
     background-color: rgba(189, 204, 255, 0.76);
     height: auto;
     margin-top: 3.5rem;
-    padding: 0 10px;
+    padding:20px;
     border-radius: 15px;
     line-height: 1.5;
+    font-weight: bolder;
 }
 .wrapper .recent-comments .recent-comments-body{
     margin-top: 1rem;
+    min-height: 50px;
+}
+.wrapper .recent-comments .recent-comment-tile{
+    color: var(--purple);
 }
 .wrapper .recent-comments .date{
     color: #000;
@@ -288,20 +282,16 @@ p{
    
 }
 @media screen and (max-width: 555px) and (min-width: 500px){
-    button,.wrapper .upvote-btn{
+    button,.wrapper  .comment-form .comment-btn button{
         font-size: 12px;
     }
-    .wrapper .upvote-btn{
-        padding: 15px 3.4rem;
-    }
+
 }
 @media screen and (max-width: 500px){
     /* button,.wrapper .upvote-btn{
         font-size: 12px;
     } */
-    .wrapper .upvote-btn{
-        padding: 20px 3.4rem;
-    }
+
 }
 
 
