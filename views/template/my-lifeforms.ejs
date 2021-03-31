@@ -1,0 +1,27 @@
+<%- include('../template/head') %>
+
+    <body>
+
+        <div class="container">
+
+            <% if(loggedIn) {%>
+                <%- include('../template/nav') %>
+                    <main>
+                        <%- include('../template/user-lifeform') %>
+                    </main>
+                    <%- include('../template/footer') %>
+                        <% } else{%>
+                            <%- include('../template/login-signup') %>
+                                <% } %>
+
+        </div>
+
+        <% if(loggedIn) {%>
+            <script src="https://kit.fontawesome.com/0cb0e7b636.js" crossorigin="anonymous"></script>
+            <script src="/javascript/homepage.js"></script>
+            <script src="/javascript/logout.js"></script>
+            <% } %>
+
+
+
+    </body>
