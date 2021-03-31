@@ -20,6 +20,7 @@ body{
     background: url('../assets/images/tech_bg.jpg');
     background-position: top;
     background-size: 100%;
+    overflow-x: hidden;
 }
 span{
     text-transform: capitalize;
@@ -153,78 +154,41 @@ p{
     color: #000;
     font-weight: 700;
 }
-.wrapper .card .content .comment{
-    background-color: var(--purple);
-    color: var(--white);
-    padding: 12px 2rem;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-weight: 700;
-    display: inline-block;
-    transition: opacity .3s ease;
-}
 
-.wrapper .card .content .comment:hover{
-    opacity: .8;
-}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px){
     .wrapper .card{
-        height: 350px;
         transition: height .3s ease;
         margin-bottom: 5.5rem;
         top: 3rem;
-    }
-    
-    .wrapper .card:hover{
-        width: 500px;
-        height: 1800px;
-    }
-    .wrapper .card .mini-box{
-        top: -6rem;
-        left: 5rem;
+        width: 400px;
+        height: 1850px;
     }
 
     .wrapper .card .content{
-        width: 100%; 
-        height: 100%;
+        position: relative;
+        left: 16rem;
+        visibility: unset;
+        opacity: 1;
+    }
+
+    .wrapper .card .mini-box{
+        top: -6rem;
+        left: 2rem;
+    }
+
+    .wrapper .card .content{
+        width: 90%; 
+        height: fit-content;
         top: 16.5rem;
-        left: 0;
+        left: 1rem;
+        line-height: 1.8;
     }
     .wrapper .card:hover .content{
-        left: 3.6rem;
-     
-    }
-   
-    .wrapper .recent-comments{
-        width: 100%;
-    }
-    .wrapper  .comment-form{
-        width: 100%;
-        transform: translate(0);
-    }
-    .wrapper  .comment-form textarea{
-        width: 100%;
-    }
-    .wrapper .comment-form .comment-btn{
-        width: 100%;
-     
+        width: unset;
+        visibility: visible;
+        opacity: 1;
     }
    
 }
-@media screen and (max-width: 555px) and (min-width: 500px){
-    button,.wrapper  .comment-form .comment-btn button{
-        font-size: 12px;
-    }
-
-}
-@media screen and (max-width: 500px){
-    /* button,.wrapper .upvote-btn{
-        font-size: 12px;
-    } */
-
-}
-
-
