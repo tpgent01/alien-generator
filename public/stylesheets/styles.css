@@ -248,13 +248,8 @@ p{
         transition: height .3s ease;
         margin-bottom: 5.5rem;
         top: 3rem;
-        width: 500px;
-        height: 1290px;
-    }
-
-    .wrapper .card:hover {
-        width: 90%;
-        height: fit-content;
+        width: 400px;
+        height: 1350px;
     }
 
     .wrapper .card .content{
@@ -266,7 +261,7 @@ p{
 
     .wrapper .card .mini-box{
         top: -6rem;
-        left: 5rem;
+        left: 2rem;
     }
 
     .wrapper .card .content{
