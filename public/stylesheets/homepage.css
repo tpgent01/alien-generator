@@ -437,7 +437,7 @@ footer p{
         justify-content: flex-start;
         align-items: center;
         width: 300px;
-        height: 100vh;
+        height: 150vh;
         transform: translateX(200%);
         transition: transform .3s ease-in-out;
     }
