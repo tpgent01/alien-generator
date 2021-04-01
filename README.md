@@ -73,15 +73,15 @@ To run on _localhost:3001_, please run command _npm start_ to start the server a
 <br>To visit program on Heroku, please [click here](http://alien-generator.herokuapp.com/).</br>
 [Click me for walkthrough 👾](https://drive.google.com/file/d/1248Ra92G2l573bpsYmTYtn5aZoR5Xbt3/view)
 <br>**Login/Sign Up:**</br>
-<br>![](public/assets/example1.gif)</br>
+<br>![](public/assets/images/example1.gif)</br>
 <br>**Create Alien:**</br>
-<br>![](public/assets/example2.gif)</br>
+<br>![](public/assets/images/example2.gif)</br>
 <br>**Comment, Upvote, Delete Alien:**</br>
-<br>![](public/assets/example3.gif)</br>
+<br>![](public/assets/images/example3.gif)</br>
 <br>**About Page:**</br>
-<br>![](public/assets/example4.gif)</br>
+<br>![](public/assets/images/example4.gif)</br>
 <br>**Mobile Functionality:**</br>
-<br>![](public/assets/example5.gif)</br>
+<br>![](public/assets/images/example5.giff)</br>
 
 
 ## ✏️Dependencies
