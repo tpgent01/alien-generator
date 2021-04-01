@@ -132,4 +132,4 @@ If you have any questions about this projects, please contact us individually vi
 
 ## 📌Contributing
 
-[Aaliyah Symlar](https://github.com/asymlar), [Dustin Micklos](https://github.com/Dustymick), [Ebenezer Kankam](https://github.com/kwabena95), [J Scott Rumptz](https://github.com/jscottrumptz), & [Taylor Gentry](https://github.com/tpgent01) ©2021 All Rights Reserved.
+[Aaliyah Symlar](https://github.com/symlara), [Dustin Micklos](https://github.com/Dustymick), [Ebenezer Kankam](https://github.com/kwabena95), [J Scott Rumptz](https://github.com/jscottrumptz), & [Taylor Gentry](https://github.com/tpgent01) ©2021 All Rights Reserved.
