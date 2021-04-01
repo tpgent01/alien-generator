@@ -58,8 +58,8 @@ THEN I am logged out of my account and directed back to the login page
 
 ## 🎨Mock-Up
 <br>**The following animation demonstrates the application functionality:**</br>
-<br>![](public/assets/mockup1.gif)</br>
-<br>![](public/assets/mockup2.gif)</br>
+<br>![](public/assets/images/mockup1.gif)</br>
+<br>![](public/assets/images/mockup2.gif)</br>
 
 
 ## 🔌Installation
