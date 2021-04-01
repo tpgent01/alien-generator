@@ -81,7 +81,7 @@ To run on _localhost:3001_, please run command _npm start_ to start the server a
 <br>**About Page:**</br>
 <br>![](public/assets/images/example4.gif)</br>
 <br>**Mobile Functionality:**</br>
-<br>![](public/assets/images/example5.giff)</br>
+<br>![](public/assets/images/example5.gif)</br>
 
 
 ## ✏️Dependencies
